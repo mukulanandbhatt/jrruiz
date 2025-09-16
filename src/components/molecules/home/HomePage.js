@@ -5,7 +5,10 @@ import globe from "../../../../public/globe.svg";
 import WhyUs from "./WhyUs";
 import Brands from "./Brands";
 import Features from "./Features";
-// import Benefits from "./Benefits"
+import Benefits from "./Benefits";
+import UploadDocuments from "./UploadDocuments";
+import TargetAudience from "./TargetAudience";
+import TrustSection from "./TrustSection";
 
 export default function HomePage() {
   return (
@@ -155,7 +158,10 @@ export default function HomePage() {
       <WhyUs />
       <Brands />
       <Features />
-      {/* <Benefits /> */}
+      <Benefits />
+      <UploadDocuments />
+      <TargetAudience />
+      <TrustSection />
     </>
   );
 }
