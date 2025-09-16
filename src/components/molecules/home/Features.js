@@ -1,42 +1,29 @@
 import React from "react";
+
 const SecureDataVaultIllustration = () => (
-  // You would replace this with your actual SVG or image component
-  <div className="w-full h-40 bg-gray-200 rounded-lg flex items-center justify-center text-gray-500 text-sm">
-    Secure Data Vault Illustration
-  </div>
+  <img src='/images/AI tools/01.jpg' alt="Secure Data Vault" className="w-full h-40 object-cover rounded-lg" />
 );
 
 const SmartAlertsIllustration = () => (
-  <div className="w-full h-40 bg-gray-200 rounded-lg flex items-center justify-center text-gray-500 text-sm">
-    Smart Alerts Illustration
-  </div>
+  <img src='/images/AI tools/02.jpg' alt="Smart Alerts" className="w-full h-40 object-cover rounded-lg" />
 );
 
 const AiContractSummaryIllustration = () => (
-  <div className="w-full h-40 bg-gray-200 rounded-lg flex items-center justify-center text-gray-500 text-sm">
-    AI Contract Summary Illustration
-  </div>
+  <img src='/images/AI tools/03.jpg' alt="AI Contract Summary" className="w-full h-40 object-cover rounded-lg" />
 );
 
 const RiskScoringIllustration = () => (
-  <div className="w-full h-40 bg-gray-200 rounded-lg flex items-center justify-center text-gray-500 text-sm">
-    Risk Scoring & Guidance Illustration
-  </div>
+  <img src='/images/AI tools/04.jpg' alt="Risk Scoring & Guidance" className="w-full h-40 object-cover rounded-lg" />
 );
 
 const OneClickIllustration = () => (
-  <div className="w-full h-40 bg-gray-200 rounded-lg flex items-center justify-center text-gray-500 text-sm">
-    One Click Actions Illustration
-  </div>
+  <img src='/images/AI tools/05.jpg' alt="One-Click Actions" className="w-full h-40 object-cover rounded-lg" />
 );
 
 const MultilingualIllustration = () => (
-  <div className="w-full h-40 bg-gray-200 rounded-lg flex items-center justify-center text-gray-500 text-sm">
-    Multilingual Translation Illustration
-  </div>
+  <img src='/images/AI tools/06.jpg' alt="Multilingual Translation" className="w-full h-40 object-cover rounded-lg" />
 );
 
-// Reusable Card Component
 const FeatureCard = ({ title, description, illustration }) => {
   return (
     <div

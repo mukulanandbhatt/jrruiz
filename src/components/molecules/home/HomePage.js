@@ -9,6 +9,8 @@ import Benefits from "./Benefits";
 import UploadDocuments from "./UploadDocuments";
 import TargetAudience from "./TargetAudience";
 import TrustSection from "./TrustSection";
+import BusinessFeatures from "./BusinessFeatures";
+import ClarioProcess from './ClarioProcess'
 
 export default function HomePage() {
   return (
@@ -162,6 +164,8 @@ export default function HomePage() {
       <UploadDocuments />
       <TargetAudience />
       <TrustSection />
+      <BusinessFeatures />
+      <ClarioProcess />
     </>
   );
 }
