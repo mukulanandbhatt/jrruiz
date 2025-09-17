@@ -32,13 +32,11 @@ const TargetAudience = () => {
 
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
           <div className="flex flex-col items-center">
-            <div className="mb-6 flex h-24 w-24 items-center justify-center rounded-full border border-gray-200 bg-white shadow-md">
-              <img
-                src="/globe.svg"
-                alt="Private Individual"
-                className="h-12 w-12"
-              />
-            </div>
+            <img
+              src="/images/HomePage/Group 1597883886.png"
+              alt="Private Individual"
+              className="h-22 w-22"
+            />
             <h2 className="text-xl font-semibold">Private Individuals</h2>
             <div className="w-[47px] border-b-2 border-[#7C55FF] my-2"></div>
             <p className="mt-2 text-sm">
@@ -48,9 +46,11 @@ const TargetAudience = () => {
           </div>
 
           <div className="flex flex-col items-center">
-            <div className="mb-6 flex h-24 w-24 items-center justify-center rounded-full border border-gray-200 bg-white shadow-md">
-              <img src="/globe.svg" alt="Freelancer" className="h-12 w-12" />
-            </div>
+            <img
+              src="/images/HomePage/Group 1597883886 -1.png"
+              alt="Freelancer"
+              className="h-22 w-22"
+            />
             <h2 className="text-xl font-semibold">
               Freelancers & Solopreneurs
             </h2>
@@ -62,9 +62,11 @@ const TargetAudience = () => {
           </div>
 
           <div className="flex flex-col items-center">
-            <div className="mb-6 flex h-24 w-24 items-center justify-center rounded-full border border-gray-200 bg-white shadow-md">
-              <img src="/globe.svg" alt="Startup" className="h-12 w-12" />
-            </div>
+            <img
+              src="/images/HomePage/Group 1597883886-2.png"
+              alt="Startup"
+              className="h-22 w-22"
+            />
             <h2 className="text-xl font-semibold">Startups & SMEs</h2>
             <div className="w-[47px] border-b-2 border-[#7C55FF] my-2"></div>
             <p className="mt-2 text-sm">
@@ -74,13 +76,11 @@ const TargetAudience = () => {
           </div>
 
           <div className="flex flex-col items-center">
-            <div className="mb-6 flex h-24 w-24 items-center justify-center rounded-full border border-gray-200 bg-white shadow-md">
-              <img
-                src="/globe.svg"
-                alt="Expat & Migrant"
-                className="h-12 w-12"
-              />
-            </div>
+            <img
+              src="/images/HomePage/Group 1597883886-3.png"
+              alt="Expat & Migrant"
+              className="h-22 w-22"
+            />
             <h2 className="text-xl font-semibold">Expatriates & Migrants</h2>
             <div className="w-[47px] border-b-2 border-[#7C55FF] my-2"></div>
             <p className="mt-2 text-sm">

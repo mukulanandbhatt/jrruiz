@@ -26,7 +26,8 @@ const steps = [
 
 const ClarioProcess = () => {
   return (
-    <section className="bg-gradient-to-b from-blue-50 to-blue-200 py-20">
+    <>
+    <section className="bg-gradient-to-b from-blue-50 to-blue-200 py-20 relative">
         <div
         className="absolute top-0 left-0 w-[300px] h-[300px] bg-no-repeat bg-contain z-0"
         style={{
@@ -51,7 +52,7 @@ const ClarioProcess = () => {
           {steps.map((step, index) => (
             <div key={index} className="flex flex-col items-center">
               <div className="bg-white rounded-xl shadow-lg p-6 w-72 h-80 flex flex-col items-center justify-center text-center">
-                <img src={step.image} alt={step.title} className="w-40 h-auto mb-4" />
+                <img src={step.image} alt={step.title} className="w-50 h-auto mb-4" />
                 <h3 className="text-xl font-semibold text-gray-700 mb-2">
                   {step.title}
                 </h3>
@@ -65,6 +66,7 @@ const ClarioProcess = () => {
         </div>
       </div>
     </section>
+    </>
   );
 };
 

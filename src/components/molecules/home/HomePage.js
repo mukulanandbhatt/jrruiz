@@ -10,7 +10,8 @@ import UploadDocuments from "./UploadDocuments";
 import TargetAudience from "./TargetAudience";
 import TrustSection from "./TrustSection";
 import BusinessFeatures from "./BusinessFeatures";
-import ClarioProcess from './ClarioProcess'
+import ClarioProcess from "./ClarioProcess";
+import ClarioUse from "./ClarioUse";
 
 export default function HomePage() {
   return (
@@ -18,35 +19,27 @@ export default function HomePage() {
       <main className="bg-[#0B002E] min-h-screen text-white">
         {/* Hero Section */}
         <section className="relative overflow-hidden">
-          <div className="container mx-auto px-6 lg:px-16 flex flex-col items-center text-center pt-20 pb-32">
-            {/* Google Rating Badge */}
+          <div
+            className="container mx-auto px-6 lg:px-16 flex flex-col items-center text-center pt-20 pb-32"
+            style={{
+              backgroundImage: `url('/images/hero_back.svg')`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+            }}
+          >
             <div className="mb-6 mt-10">
               <div className="bg-[#1E1E2F] rounded-full px-4 py-2 flex items-center justify-between shadow-md gap-4 w-fit">
-                {/* Left Side: Google Logo + Rating */}
                 <div className="w-10 h-10 flex items-center justify-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="50"
-                    height="50"
-                    viewBox="0 0 48 48"
-                  >
-                    <path
-                      fill="#4285F4"
-                      d="M23.49 12.27c0-.74-.06-1.46-.18-2.16H12v4.09h6.42c-.27 1.46-1.08 2.7-2.28 3.53v2.92h3.68c2.15-1.99 3.41-4.93 3.41-8.38z"
-                    />
-                    <path
-                      fill="#34A853"
-                      d="M12 24c3.24 0 5.94-1.08 7.92-2.94l-3.68-2.92c-1.02.68-2.31 1.08-4.24 1.08-3.24 0-5.98-2.18-6.95-5.1H1.3v3.2C3.25 21.54 7.31 24 12 24z"
-                    />
-                    <path
-                      fill="#FBBC05"
-                      d="M5.05 14.02A7.99 7.99 0 0 1 5 12c0-.74.12-1.46.3-2.12V6.68H1.3A12 12 0 0 0 0 12c0 1.88.45 3.64 1.25 5.18l3.8-3.16z"
-                    />
-                    <path
-                      fill="#EA4335"
-                      d="M12 4.77c1.75 0 3.29.6 4.51 1.75l3.37-3.37C17.91 1.17 15.2 0 12 0 7.31 0 3.25 2.46 1.3 6.68l3.8 3.16C6.02 6.95 8.76 4.77 12 4.77z"
-                    />
-                  </svg>
+                  <img
+                    src="/images/HomePage/GoogleLogo.png"
+                    alt="Google Logo"
+                    style={{
+                      width: "50",
+                      height: "50",
+                      viewBox: "0 0 48 48",
+                    }}
+                  />
                 </div>
 
                 <div className="flex flex-col">
@@ -65,41 +58,51 @@ export default function HomePage() {
                   </div>
                 </div>
 
-                {/* Right Side: Avatars + Count */}
                 <div className="flex items-center gap-1">
                   <div className="flex -space-x-2">
                     <Image
-                      src={globe}
+                      src="/images/HomePage/author-6.jpg.png"
+                      alt="User"
+                      width={32}
+                      height={32}
+                      className="rounded-full border-2 border-white"
+                    />
+                    <Image
+                      src="/images/HomePage/author-5.jpg.png"
                       alt="User 1"
                       width={32}
                       height={32}
                       className="rounded-full border-2 border-white"
                     />
                     <Image
-                      src={globe}
+                      src="/images/HomePage/author-2.jpg.png"
                       alt="User 2"
                       width={32}
                       height={32}
                       className="rounded-full border-2 border-white"
                     />
                     <Image
-                      src={globe}
+                      src="/images/HomePage/author-3.jpg.png"
                       alt="User 3"
                       width={32}
                       height={32}
                       className="rounded-full border-2 border-white"
                     />
                     <Image
-                      src={globe}
+                      src="/images/HomePage/author-1.jpg.png"
                       alt="User 4"
                       width={32}
                       height={32}
                       className="rounded-full border-2 border-white"
                     />
+                    <Image
+                      src="/images/HomePage/20K+.png"
+                      alt="20K +"
+                      width={32}
+                      height={32}
+                      className="rounded-full border-2"
+                    />
                   </div>
-                  <span className="text-sm font-medium text-white bg-[#2C2C3E] rounded-full px-2 py-0.5">
-                    20k+
-                  </span>
                 </div>
               </div>
             </div>
@@ -112,7 +115,6 @@ export default function HomePage() {
             </h1>
 
             {/* Subheading */}
-
             <p className="mt-6 text-lg md:text-xl text-gray-300 max-w-3xl">
               Clario.ai is your smart contract assistant powered by artificial
               intelligence. Automate, understand, and manage your contracts –
@@ -131,32 +133,106 @@ export default function HomePage() {
             </p>
             {/* Feature Buttons */}
             <div className="mt-7 flex flex-wrap justify-center gap-4">
-              <span className="px-6 py-3 bg-[#1C1C1E] rounded-full text-sm md:text-base text-gray-200">
+              <span className="flex items-center gap-2 px-6 py-3 bg-[#1C1C1E] rounded-full text-sm md:text-base text-gray-200">
+                <img src="/images/HomePage/Right tick.png" alt="Right tick" />
                 Answer emails & analyze documents
               </span>
-              <span className="px-6 py-3 bg-[#1C1C1E] rounded-full text-sm md:text-base text-gray-200">
+              <span className="flex items-center gap-2 px-6 py-3 bg-[#1C1C1E] rounded-full text-sm md:text-base text-gray-200">
+                <img src="/images/HomePage/Right tick.png" alt="Right tick" />
                 Sign documents automatically
               </span>
-              <span className="px-6 py-3 bg-[#1C1C1E] rounded-full text-sm md:text-base text-gray-200">
+              <span className="flex items-center gap-2 px-6 py-3 bg-[#1C1C1E] rounded-full text-sm md:text-base text-gray-200">
+                <img src="/images/HomePage/Right tick.png" alt="Right tick" />
                 Compare contracts with legal precision
               </span>
             </div>
           </div>
 
-          {/* Decorative Background Gradient */}
-          <div className="absolute inset-0 -z-10">
-            <div className="w-[1200px] h-[1200px] bg-gradient-radial from-[#1A0B3A] via-[#0B002E] to-[#0B002E] opacity-70 rounded-full blur-3xl mx-auto"></div>
+          {/* Floating Shapes */}
+          <div className="absolute bottom-60 left-20">
+            <Image
+              src="/images/HomePage/Star.png"
+              alt="star decoration"
+              width={92}
+              height={92}
+            />
           </div>
 
-          {/* Floating Shapes */}
-          <div className="absolute top-20 left-10">
-            <Image src="/shape1.svg" alt="decoration" width={60} height={60} />
+          <div className="absolute top-40 right-10">
+            <Image
+              src="/images/HomePage/Star.png"
+              alt="star decoration"
+              width={92}
+              height={92}
+            />
           </div>
-          <div className="absolute bottom-32 right-16">
-            <Image src="/shape2.svg" alt="decoration" width={60} height={60} />
+          <div className="absolute top-30 right-60">
+            <Image
+              src="/images/HomePage/Property 1=Group.png"
+              alt="decoration"
+              width={110}
+              height={110}
+            />
+          </div>
+          <div className="absolute top-80 right-40">
+            <Image
+              src="/images/HomePage/Computer Vision.png"
+              alt="computer vision decoration"
+              width={150}
+              height={200}
+            />
+          </div>
+          <div className="absolute bottom-80 right-70">
+            <Image
+              src="/images/HomePage/Vector.png"
+              alt="vector decoration"
+              width={100}
+              height={200}
+            />
+          </div>
+          <div className="absolute bottom-10 right-10">
+            <Image
+              src="/images/wave.svg"
+              alt="wave decoration"
+              width={300}
+              height={400}
+            />
+          </div>
+          <div className="absolute top-60 left-40 scale-x-[-1]">
+            <Image
+              src="/images/wave.svg"
+              alt="wave decoration"
+              width={300}
+              height={400}
+            />
+          </div>
+          <div className="absolute top-40 left-50">
+            <Image
+              src="/images/HomePage/Property 2=Group.png"
+              alt="decoration"
+              width={80}
+              height={80}
+            />
+          </div>
+          <div className="absolute top-95 left-40">
+            <Image
+              src="/images/HomePage/Data Science.png"
+              alt="data science decoration"
+              width={150}
+              height={200}
+            />
+          </div>
+          <div className="absolute bottom-60 left-60">
+            <Image
+              src="/images/HomePage/Property 3=Group.png"
+              alt="decoration"
+              width={90}
+              height={90}
+            />
           </div>
         </section>
       </main>
+
       <WhyUs />
       <Brands />
       <Features />
@@ -166,6 +242,7 @@ export default function HomePage() {
       <TrustSection />
       <BusinessFeatures />
       <ClarioProcess />
+      <ClarioUse />
     </>
   );
 }

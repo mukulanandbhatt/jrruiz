@@ -4,9 +4,6 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-// import ClarioLogo from "@/public/logo.svg"; // replace with actual logo path
-import nextLogo from "../../../public/next.svg"; // replace with actual logo path
-
 export default function Header() {
   const [activeNav, setActiveNav] = useState("/");
 
@@ -16,20 +13,13 @@ export default function Header() {
         <div className="flex items-center justify-between bg-white/90 backdrop-blur-md border border-gray-200 shadow-md px-8 py-4 rounded-full">
           {/* Logo */}
           <Link href="/" onClick={() => setActiveNav("/")}>
-            {/* <Image
-            src={ClarioLogo}
+            <Image
+            src='/images/logo.svg'
             alt="Clario.ai Logo"
             width={120}
             height={40}
             priority
-          /> */}
-            <Image
-              src={nextLogo}
-              alt="Next.js Logo"
-              width={120}
-              height={40}
-              priority
-            />
+          />
           </Link>
 
           <nav className="hidden lg:flex items-center space-x-8 font-medium text-gray-700 dark:text-gray-200">
