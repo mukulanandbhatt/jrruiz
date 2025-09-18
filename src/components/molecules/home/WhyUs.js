@@ -19,7 +19,7 @@ const WhyUs = () => {
           <div
             className="absolute z-0 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-cover bg-center rounded-[200px]"
             style={{
-              backgroundImage: "url('/images/Homepage/WhyUsBG.png')",
+              backgroundImage: "url('/images/HomePage/Group 1000004033.svg')",
               width: '873px',
               height: '489px',
             }}
@@ -42,17 +42,17 @@ const WhyUs = () => {
               description="Upload your contracts or sync with Google Drive, Dropbox, or OneDrive. Our AI detects contents, deadlines, and risks explaining everything in plain language for you."
             />
             <FeatureCard
-              icon={<img src='/images/Homepage/Frame2.png' className="w-12 h-12" />}
+              icon={<img src='/images/HomePage/ai-browser-stroke-rounded 1.svg' className="w-12 h-12" />}
               title="Understanding and controlling what you sign"
               description="Clario.AI identifies problematic clauses, suggests actions (e.g., termination, renewal, negotiation), and helps you communicate legally across multiple languages."
             />
             <FeatureCard
-              icon={<img src='/images/Homepage/Frame3.png' className="w-12 h-12" />}
+              icon={<img src='/images/HomePage/edit-table-stroke-rounded 1.svg' className="w-12 h-12" />}
               title="Contracts, tailored for you"
               description="Automatic reminders, legally compliant emails, translations, and organized storage everything you need to manage your legal responsibilities without a law degree."
             />
             <FeatureCard
-              icon={<img src='/images/Homepage/Frame4.png' className="w-12 h-12" />}
+              icon={<img src='/images/HomePage/smart-phone-04-stroke-rounded 1.jpg' className="w-12 h-12" />}
               title="Your personal AI assistant for bureaucracy in your app"
               description="Easily upload your contracts or sync cloud storage. The AI recognizes contents, deadlines, and risks, and gives you clear, understandable explanations."
             />
