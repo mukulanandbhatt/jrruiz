@@ -12,6 +12,11 @@ import TrustSection from "./TrustSection";
 import BusinessFeatures from "./BusinessFeatures";
 import ClarioProcess from "./ClarioProcess";
 import ClarioUse from "./ClarioUse";
+import Testimonials from './Testimonials'
+import Connect from '../../atoms/Connect'
+import Pricing from '../../atoms/Pricing'
+import CTASection from '../../atoms/CTASection'
+import FAQ from '../../atoms/FAQ'
 
 export default function HomePage() {
   return (
@@ -96,7 +101,7 @@ export default function HomePage() {
                       className="rounded-full border-2 border-white"
                     />
                     <Image
-                      src="/images/HomePage/20K+.png"
+                      src="/images/HomePage/Background+Border.png"
                       alt="20K +"
                       width={32}
                       height={32}
@@ -243,6 +248,11 @@ export default function HomePage() {
       <BusinessFeatures />
       <ClarioProcess />
       <ClarioUse />
+      <Testimonials />
+      <Connect />
+      <Pricing />
+      <CTASection />
+      <FAQ />
     </>
   );
 }

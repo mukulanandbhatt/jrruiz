@@ -14,7 +14,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" onClick={() => setActiveNav("/")}>
             <Image
-            src='/images/logo.svg'
+            src='/images/Frame 5.png'
             alt="Clario.ai Logo"
             width={120}
             height={40}

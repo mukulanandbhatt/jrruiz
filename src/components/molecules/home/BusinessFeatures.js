@@ -1,3 +1,4 @@
+
 import React from "react";
 
 const BusinessFeatures = () => {
@@ -27,7 +28,7 @@ const BusinessFeatures = () => {
             </h3>
             <div className="w-60 h-0.5 bg-indigo-600 my-4"></div>
             <p className="mt-4 text-gray-700">
-              fynk's contract management software was built to keep your data
+              fynks contract management software was built to keep your data
               safe. From hosting over product architecture to audit-proof
               storage, you can rest assured that your business will remain
               protected with enterprise-grade security and GDPR compliant.

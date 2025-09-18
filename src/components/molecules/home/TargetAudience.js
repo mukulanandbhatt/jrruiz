@@ -2,6 +2,7 @@ import React from "react";
 
 const TargetAudience = () => {
   return (
+    <>
     <section className="relative overflow-hidden bg-[#f5f3ff] py-20 px-4 sm:px-6 lg:px-8">
       <div
         className="absolute top-0 left-0 w-[300px] h-[300px] bg-no-repeat bg-contain z-0"
@@ -91,6 +92,8 @@ const TargetAudience = () => {
         </div>
       </div>
     </section>
+    <img src='/images/Building Trust/bd03ef506a5ffb2401d55f477b8bc634351db58b.png' alt='Image' />
+    </>
   );
 };
 

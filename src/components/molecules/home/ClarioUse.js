@@ -9,7 +9,7 @@ const Accordion = ({ items }) => {
   };
 
   return (
-    <div className="w-full max-w-2xl mx-auto space-y-4">
+    <div className="w-full max-w-2xl mx-auto space-y-4 relative z-10">
       {items.map((item, index) => (
         <div key={index} className="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 ease-in-out">
           <div
@@ -101,9 +101,21 @@ const accordionData = [
 
 function ClarioUse() {
   return (
-    <div className="min-h-screen py-20 px-4" style={{
-      background: 'linear-gradient(135deg, #f0f4ff, #fafafa)',
-    }}>
+    <div className="min-h-screen py-20 px-4 relative">
+           <div
+      className="absolute z-0 w-[500px] h-[300px] top-[290px] right-[200px] rotate-180 rounded-[200px] bg-cover bg-center"
+      style={{
+        backgroundImage: "url('/images/Homepage/ClarioUseBG.png')",
+        opacity: 0.7
+      }}
+    />
+     <div
+      className="absolute z-0 w-[500px] h-[300px] top-[50px] right-[200px] rotate-180 rounded-[200px] bg-cover bg-center"
+      style={{
+        backgroundImage: "url('/images/Homepage/Vector(1).png')",
+        opacity: 0.7
+      }}
+    />
       <div className="text-center mb-12">
         <h1 className="text-4xl font-bold text-gray-900 mb-2">When to use Clario.ai?</h1>
         <p className="text-gray-800">Practical Scenarios Where Clario.ai Delivers Value</p>

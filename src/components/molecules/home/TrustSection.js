@@ -35,6 +35,22 @@ const TrustSection = () => {
       src: "/images/Building Trust/Rectangle 161124545.png",
       alt: "ISO 27001 Certified logo",
     },
+    {
+      src: "/images/Building Trust/208597c8b7c122c36d67c4a5db0847c3bfb3e6c9.png",
+      alt: "HI TRUST logo"
+    },
+    {
+      src: "/images/Building Trust/a9c83c09bb622da318b00af25a889fac754ede5f.png",
+      alt: "USDP logo"
+    },
+    {
+      src: "/images/Building Trust/cdeb533296ad4ee002a1e16bfc28e5f6cddb357a.png",
+      alt: "NST logo"
+    },
+    {
+      src: "/images/Building Trust/9c1b697114933d21a9feba0383ffedd627f14445.png",
+      alt: "ISO 42001 logo"
+    },
   ];
 
   const carouselRef = useRef(null);

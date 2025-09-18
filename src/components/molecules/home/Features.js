@@ -1,27 +1,27 @@
 import React from "react";
 
 const SecureDataVaultIllustration = () => (
-  <img src='/images/AI tools/01.jpg' alt="Secure Data Vault" className="w-full h-40 object-cover rounded-lg" />
+  <img src='/images/AI tools/01.jpg' alt="Secure Data Vault" className="w-full h-45 object-cover rounded-lg" />
 );
 
 const SmartAlertsIllustration = () => (
-  <img src='/images/AI tools/02.jpg' alt="Smart Alerts" className="w-full h-40 object-cover rounded-lg" />
+  <img src='/images/AI tools/02.jpg' alt="Smart Alerts" className="w-full h-45 object-cover rounded-lg" />
 );
 
 const AiContractSummaryIllustration = () => (
-  <img src='/images/AI tools/03.jpg' alt="AI Contract Summary" className="w-full h-40 object-cover rounded-lg" />
+  <img src='/images/AI tools/03.jpg' alt="AI Contract Summary" className="w-full h-45 object-cover rounded-lg" />
 );
 
 const RiskScoringIllustration = () => (
-  <img src='/images/AI tools/04.jpg' alt="Risk Scoring & Guidance" className="w-full h-40 object-cover rounded-lg" />
+  <img src='/images/AI tools/04.jpg' alt="Risk Scoring & Guidance" className="w-full h-45 object-cover rounded-lg" />
 );
 
 const OneClickIllustration = () => (
-  <img src='/images/AI tools/05.jpg' alt="One-Click Actions" className="w-full h-40 object-cover rounded-lg" />
+  <img src='/images/AI tools/05.jpg' alt="One-Click Actions" className="w-full h-45 object-cover rounded-lg" />
 );
 
 const MultilingualIllustration = () => (
-  <img src='/images/AI tools/06.jpg' alt="Multilingual Translation" className="w-full h-40 object-cover rounded-lg" />
+  <img src='/images/AI tools/06.jpg' alt="Multilingual Translation" className="w-full h-45 object-cover rounded-lg" />
 );
 
 const FeatureCard = ({ title, description, illustration }) => {
