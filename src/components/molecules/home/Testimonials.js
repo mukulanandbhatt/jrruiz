@@ -13,7 +13,7 @@ const Star = () => (
 const LeftArrow = () => (
   <img
     className="w-12 h-12"
-    src="/images/HomePage/LeftArrow.png"
+    src="/images/Testimonials/LeftArrow.svg"
     alt="Left Arrow"
   ></img>
 );
@@ -21,7 +21,7 @@ const LeftArrow = () => (
 const RightArrow = () => (
   <img
     className="w-12 h-12"
-    src="/images/Homepage/RightArrow.png"
+    src="/images/Testimonials/RightArrow.svg"
     alt="Right Arrow"
   ></img>
 );
@@ -151,16 +151,16 @@ const Testimonials = () => {
     
     <section className="bg-gray-50 py-20 relative overflow-hidden">
       <div
-        className="absolute z-0 w-[500px] h-[250px] top-[300px] right-[200px] rotate-180 rounded-[200px] bg-cover bg-center"
+        className="absolute z-0 w-[500px] h-[250px] top-[300px] right-[200px]  bg-cover bg-center"
         style={{
-          backgroundImage: "url('/images/Homepage/ClarioUseBG.png')",
+          backgroundImage: "url('/images/Testimonials/Vector.svg')",
           opacity: 0.7,
         }}
       />
       <div
-        className="absolute z-0 w-[500px] h-[250px] top-[50px] right-[200px] rotate-180 rounded-[200px] bg-cover bg-center"
+        className="absolute z-0 w-[500px] h-[250px] top-[50px] right-[200px] bg-cover bg-center"
         style={{
-          backgroundImage: "url('/images/Homepage/Vector(1).png')",
+          backgroundImage: "url('/images/Testimonials/Vector1.svg')",
           opacity: 0.7,
         }}
       />

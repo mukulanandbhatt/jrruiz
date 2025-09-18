@@ -103,16 +103,16 @@ function ClarioUse() {
   return (
     <div className="min-h-screen py-20 px-4 relative">
            <div
-      className="absolute z-0 w-[500px] h-[300px] top-[290px] right-[200px] rotate-180 rounded-[200px] bg-cover bg-center"
+      className="absolute z-0 w-[500px] h-[300px] top-[290px] right-[200px]  bg-cover bg-center"
       style={{
-        backgroundImage: "url('/images/Homepage/ClarioUseBG.png')",
+        backgroundImage: "url('/images/HomePage/Vector.svg')",
         opacity: 0.7
       }}
     />
      <div
-      className="absolute z-0 w-[500px] h-[300px] top-[50px] right-[200px] rotate-180 rounded-[200px] bg-cover bg-center"
+      className="absolute z-0 w-[500px] h-[300px] top-[60px] right-[200px]  bg-cover bg-center"
       style={{
-        backgroundImage: "url('/images/Homepage/Vector(1).png')",
+        backgroundImage: "url('/images/HomePage/Vector1.svg')",
         opacity: 0.7
       }}
     />

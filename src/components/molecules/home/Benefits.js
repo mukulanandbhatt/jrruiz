@@ -64,7 +64,7 @@ const Benefits = () => {
                 }}
               />
               <img
-                src="/images/vector 7.svg"
+                src="/images/vector7.svg"
                 alt="Decorative wavy line"
                 className="absolute object-contain"
                 style={{
