@@ -37,7 +37,7 @@ const WhyUs = () => {
 
           <div className="flex flex-row overflow-x-auto gap-8 pb-4 -mx-4 px-4 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] relative z-10">
             <FeatureCard
-              icon={<img src='/images/Homepage/Frame.png' className="w-12 h-12" />}
+              icon={<img src='/images/HomePage/Frame.svg' className="w-12 h-12" />}
               title="Cancel, modify, sign documents with your Personal AI"
               description="Upload your contracts or sync with Google Drive, Dropbox, or OneDrive. Our AI detects contents, deadlines, and risks explaining everything in plain language for you."
             />
