@@ -140,7 +140,7 @@ export default function Header() {
   return (
     <>
       <header className="fixed top-5 left-1/2 -translate-x-1/2 z-50 w-11/12 max-w-[1296px] px-4 md:px-8">
-        <div className="flex items-center justify-between bg-white/90 backdrop-blur-md border border-gray-200 shadow-md px-4 py-4 rounded-full">
+        <div className="flex items-center justify-between bg-white backdrop-blur-md border border-gray-200 shadow-md px-4 py-4 rounded-full">
           {/* Logo */}
           <Link href="/" onClick={() => setActiveNav("/")}>
             <Image
