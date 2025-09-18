@@ -76,7 +76,7 @@ const accordionData = [
   {
     title: "When You Need to Make a Claim or Dispute",
     content: [
-     "A government letter in a foreign language about taxes or social security.",
+      "A government letter in a foreign language about taxes or social security.",
       "A fine notice for something you didn't know about (parking ticket, late payment).",
       "An insurance renewal letter with small-print changes.",
     ],
@@ -101,22 +101,22 @@ const accordionData = [
 
 function ClarioUse() {
   return (
-    <div className="min-h-screen py-20 px-4 relative">
-           <div
-      className="absolute z-0 w-[500px] h-[300px] top-[290px] right-[200px]  bg-cover bg-center"
-      style={{
-        backgroundImage: "url('/images/HomePage/Vector.svg')",
-        opacity: 0.7
-      }}
-    />
-     <div
-      className="absolute z-0 w-[500px] h-[300px] top-[60px] right-[200px]  bg-cover bg-center"
-      style={{
-        backgroundImage: "url('/images/HomePage/Vector1.svg')",
-        opacity: 0.7
-      }}
-    />
-      <div className="text-center mb-12">
+    <div className="min-h-screen py-20 px-4 relative overflow-hidden">
+      <div
+        className="absolute z-0 w-64 h-48 md:w-96 md:h-64 top-1/4 right-1/4 transform translate-x-1/2 -translate-y-1/2 bg-cover bg-center"
+        style={{
+          backgroundImage: "url('/images/HomePage/Vector.svg')",
+          opacity: 0.7
+        }}
+      />
+      <div
+        className="absolute z-0 w-64 h-48 md:w-96 md:h-64 top-[5%] right-1/4 transform translate-x-1/2 -translate-y-1/2 bg-cover bg-center"
+        style={{
+          backgroundImage: "url('/images/HomePage/Vector1.svg')",
+          opacity: 0.7
+        }}
+      />
+      <div className="text-center mb-12 relative z-10">
         <h1 className="text-4xl font-bold text-gray-900 mb-2">When to use Clario.ai?</h1>
         <p className="text-gray-800">Practical Scenarios Where Clario.ai Delivers Value</p>
       </div>
@@ -126,5 +126,4 @@ function ClarioUse() {
 }
 
 export default ClarioUse;
-
 

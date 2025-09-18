@@ -2,17 +2,19 @@ import React from 'react';
 
 const CTASection = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-blue-600 font-[PP Nueue Montreal] p-4 relative overflow-hidden">
+    <div className="relative min-h-screen flex items-center justify-center bg-blue-600 font-[PP Nueue Montreal] p-4 overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-full">
-       <img className="absolute top-1/20 left-0"
-        src='/images/Pricing/Ellipse 36.png'
-        alt='Ellipse Decorative'
+        <img 
+          className="absolute top-[5%] left-0 w-24 sm:w-36 lg:w-48 opacity-75"
+          src='/images/Pricing/Ellipse 36.png'
+          alt='Decorative Ellipse'
         />
-        <img className="absolute  left-1/4 transform  w-[900px] h-[450px]"  
-        src='/images/Pricing/Vector 7.png'
-        alt='wave decorative'
+        <img 
+          className="absolute left-1/4 transform -translate-x-1/2 w-[700px] h-auto lg:w-[900px]" 
+          src='/images/Pricing/Vector 7.png'
+          alt='Decorative Wave'
         />
-        <div className="absolute top-20 right-12 w-16 h-14 grid grid-cols-6 grid-rows-6 gap-2 opacity-50">
+        <div className="absolute top-10 right-4 sm:right-12 w-16 h-14 grid grid-cols-6 grid-rows-6 gap-2 opacity-50">
           {[...Array(36)].map((_, i) => (
             <div key={i} className="w-1 h-1 bg-white rounded-full"></div>
           ))}
@@ -23,11 +25,11 @@ const CTASection = () => {
           Boost your productivity and relax. Get started with Clario.AI today.
         </h1>
         <p className="text-lg sm:text-xl lg:text-2xl font-light max-w-7xl mx-auto">
-          Individuals, Companies using our Learned AI Document management software get their work <br/> done faster than ever before. Ready to give valuable time back to your team?
+          Individuals, Companies using our Learned AI Document management software get their work done faster than ever before. Ready to give valuable time back to your team?
         </p>
 
         <div className="flex flex-col sm:flex-row justify-center items-center gap-4 pt-4">
-          <button className="flex items-center gap-2 px-8 py-4 border-1 border-t-2 border-black bg-white text-black  rounded-full shadow-lg transition-all duration-300 hover:scale-105 hover:bg-gray-100">
+          <button className="flex items-center gap-2 px-8 py-4 border-2 border-white bg-white text-black rounded-full shadow-lg transition-all duration-300 hover:scale-105 hover:bg-gray-100">
             START FOR FREE
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-5 h-5">
               <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />

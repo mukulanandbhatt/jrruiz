@@ -5,7 +5,7 @@ const Connect = () => {
     <>
       <div className="relative min-h-screen bg-[#0a0a1f] text-white overflow-hidden flex flex-col items-center justify-center py-20 px-4 sm:px-8">
         <div
-          className="absolute top-20 -left-40 w-3/5 z-0 h-50 opacity-50"
+          className="absolute top-20 left-1/2 transform -translate-x-1/2 w-4/5 sm:-left-40 sm:w-3/5 z-0 opacity-50 h-50"
           style={{
             backgroundImage: `url('/images/Vector7.svg')`,
             backgroundSize: "cover",
@@ -13,7 +13,6 @@ const Connect = () => {
             backgroundRepeat: "no-repeat",
           }}
         ></div>
-
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
           style={{
@@ -21,17 +20,17 @@ const Connect = () => {
           }}
         ></div>
         <div
-          className="absolute w-[300px] h-[300px] bg-no-repeat bg-contain"
+          className="absolute w-40 h-40 sm:w-60 sm:h-60 bg-no-repeat bg-contain"
           style={{
             backgroundImage: `url('/images/wave.svg')`,
-            bottom: "-180px",
+            bottom: "10px",
             right: "10px",
             zIndex: 1,
           }}
         ></div>
 
-        <div className="relative flex flex-col items-center justify-center p-2 md:p-4">
-          <h1 className="text-3xl md:text-5xl font-bold mb-4">We Conect</h1>
+        <div className="relative flex flex-col items-center justify-center p-2 md:p-4 z-10">
+          <h1 className="text-3xl md:text-5xl font-bold mb-4 text-center">We Connect</h1>
           <p className="text-sm md:text-lg text-center text-gray-300 max-w-xl mb-12">
             Cloud: Google App Whatsapp Drive Logo, Onedrive, dropBox and others.
           </p>

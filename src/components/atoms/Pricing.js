@@ -66,39 +66,39 @@ const plans = [
 
 const Pricing = () => {
   return (
-    <div
-      className=" py-16 px-6 relative"
-      style={{
-        backgroundImage: `url('/images/Pricing/TopRight.png')`,
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "right 20px top 10px",
-        backgroundSize: "750px",
-        opacity: 0.7,
-      }}
-    >
+    <div className="py-16 px-4 sm:px-6 relative overflow-hidden">
       <div
-        className="absolute"
+        className="absolute top-0 right-0 w-full sm:w-2/3 lg:w-1/2 h-auto opacity-70 z-0"
+        style={{
+          backgroundImage: `url('/images/Pricing/TopRight.png')`,
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "top right",
+          backgroundSize: "contain",
+        }}
+      ></div>
+      <div
+        className="absolute bottom-0 left-0 w-full sm:w-1/2 lg:w-1/3 h-auto z-0"
         style={{
           backgroundImage: `url('/images/Pricing/BottomLeft.png')`,
-          backgroundRepeat: "no repeat",
-          left: "30px",
-          bottom: "40px",
-          width: "400px",
-          height: "400px",
-          // opacity: -0.7,
-          // pointerEvents: "none",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "bottom left",
+          backgroundSize: "contain",
+          opacity: 0.7,
         }}
       />
-      <h2 className="text-3xl font-bold text-center mb-4">Pricing Plans</h2>
-      <p className="text-center text-gray-800 mb-12">
+
+      <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4 relative z-10">
+        Pricing Plans
+      </h2>
+      <p className="text-center text-gray-800 mb-12 relative z-10">
         Choose the legal power that fits your needs
       </p>
 
-      <div className="grid md:grid-cols-4 gap-6 max-w-7xl mx-auto relative">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto relative z-10">
         {plans.map((plan, idx) => (
           <div
             key={idx}
-            className={`rounded-xl p-6 shadow-md flex flex-col justify-between border-2 border-transparent transition-all duration-300 ease-in-out ${plan.highlight} ${plan.hoverBorder}`}
+            className={`rounded-xl bg-white p-6 shadow-md flex flex-col justify-between border-2 border-transparent transition-all duration-300 ease-in-out ${plan.highlight} ${plan.hoverBorder}`}
           >
             <div>
               <h3 className="text-lg font-semibold">{plan.title}</h3>
@@ -114,7 +114,7 @@ const Pricing = () => {
               </ul>
             </div>
             <button
-              className="mt-6 w-full h-11.5 text-black py-2 rounded-3xl hover:bg-blue-700 hover:text-white transition border-2 border-blue-600"
+              className="mt-6 w-full h-12 text-black py-2 rounded-full hover:bg-blue-700 hover:text-white transition border-2 border-blue-600"
             >
               {plan.button}
             </button>
@@ -122,7 +122,7 @@ const Pricing = () => {
         ))}
       </div>
 
-      <div className="mt-16 text-center">
+      <div className="mt-16 text-center relative z-10">
         <h3 className="text-xl font-semibold">Coming soon</h3>
         <p className="text-gray-800 mt-2 max-w-2xl mx-auto">
           Voice control, e-signatures, AI legal tutor, and a visual contract
