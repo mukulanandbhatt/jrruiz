@@ -7,7 +7,7 @@ const Connect = () => {
         <div
           className="absolute top-20 -left-40 w-3/5 z-0 h-50 opacity-50"
           style={{
-            backgroundImage: `url('/images/vector 7.svg')`,
+            backgroundImage: `url('/images/Vector7.svg')`,
             backgroundSize: "cover",
             backgroundPosition: "left center",
             backgroundRepeat: "no-repeat",
