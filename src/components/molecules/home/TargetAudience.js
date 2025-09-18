@@ -3,7 +3,7 @@ import React from "react";
 const TargetAudience = () => {
   return (
     <>
-    <section className="relative overflow-hidden bg-[#f5f3ff] py-20 px-4 sm:px-6 lg:px-8">
+    <section className="relative overflow-hidden bg-[#f5f3ff] py-10 sm:py-20 px-4 sm:px-6 lg:px-8">
       <div
         className="absolute top-0 left-0 w-[300px] h-[300px] bg-no-repeat bg-contain z-0"
         style={{
@@ -20,7 +20,7 @@ const TargetAudience = () => {
       <div className="relative z-10 mx-auto max-w-7xl text-center">
         <div className="mb-16">
           <h1
-            className="text-xl font-bold sm:text-5xl"
+            className="text-2xl sm:text-2xl md:text-4xl font-bold"
             style={{ fontFamily: "PP Neue Montreal, sans-serif" }}
           >
             Who is It for?
@@ -31,7 +31,7 @@ const TargetAudience = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
+        <div className="grid grid-cols-2 gap-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
           <div className="flex flex-col items-center">
             <img
               src="/images/HomePage/Group 1597883886.png"

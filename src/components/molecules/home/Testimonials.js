@@ -169,7 +169,7 @@ const Testimonials = () => {
           <h2 className="text-4xl font-bold text-gray-800">
             Customer testimonials
           </h2>
-          <p className="mt-2 text-xl font-light text-gray-600">
+          <p className="mt-2 text-2xl sm:text-2xl md:text-4xl font-light text-gray-600">
             Hear what our users have to say about Clario.AI
           </p>
         </div>

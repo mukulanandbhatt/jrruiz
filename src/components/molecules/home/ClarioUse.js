@@ -117,7 +117,7 @@ function ClarioUse() {
         }}
       />
       <div className="text-center mb-12 relative z-10">
-        <h1 className="text-4xl font-bold text-gray-900 mb-2">When to use Clario.ai?</h1>
+        <h1 className="text-2xl sm:text-2xl md:text-4xl font-bold text-gray-900 mb-2">When to use Clario.ai?</h1>
         <p className="text-gray-800">Practical Scenarios Where Clario.ai Delivers Value</p>
       </div>
       <Accordion items={accordionData} />

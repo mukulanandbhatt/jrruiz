@@ -25,7 +25,7 @@ const WhyUs = () => {
           }}
         ></div>
         <div className="text-center mb-10 relative z-10">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800">
+          <h2 className="text-2xl sm:text-2xl md:text-4xl font-bold text-gray-800">
             Why Clario.AI?
           </h2>
           <p className="mt-3 text-sm sm:text-md md:text-lg text-gray-600 max-w-2xl mx-auto">

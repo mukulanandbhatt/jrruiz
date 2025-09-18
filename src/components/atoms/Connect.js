@@ -3,7 +3,7 @@ import React from "react";
 const Connect = () => {
   return (
     <>
-      <div className="relative min-h-screen bg-[#0a0a1f] text-white overflow-hidden flex flex-col items-center justify-center py-20 px-4 sm:px-8">
+      <div className="relative min-h-[70vh] sm:min-h-screen bg-[#0a0a1f] text-white overflow-hidden flex flex-col items-center justify-center py-10 px-4 sm:px-8">
         <div
           className="absolute top-20 left-1/2 transform -translate-x-1/2 w-4/5 sm:-left-40 sm:w-3/5 z-0 opacity-50 h-50"
           style={{
@@ -30,7 +30,9 @@ const Connect = () => {
         ></div>
 
         <div className="relative flex flex-col items-center justify-center p-2 md:p-4 z-10">
-          <h1 className="text-3xl md:text-5xl font-bold mb-4 text-center">We Connect</h1>
+          <h1 className="text-3xl md:text-5xl font-bold mb-4 text-center">
+            We Connect
+          </h1>
           <p className="text-sm md:text-lg text-center text-gray-300 max-w-xl mb-12">
             Cloud: Google App Whatsapp Drive Logo, Onedrive, dropBox and others.
           </p>

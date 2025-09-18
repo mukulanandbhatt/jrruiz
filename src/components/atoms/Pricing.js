@@ -87,7 +87,7 @@ const Pricing = () => {
         }}
       />
 
-      <h2 className="text-3xl sm:text-4xl font-bold text-center mb-4 relative z-10">
+      <h2 className="text-2xl sm:text-2xl md:text-4xl font-bold text-center mb-4 relative z-10">
         Pricing Plans
       </h2>
       <p className="text-center text-gray-800 mb-12 relative z-10">

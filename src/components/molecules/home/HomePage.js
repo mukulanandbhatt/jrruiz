@@ -113,7 +113,7 @@ export default function HomePage() {
             </div>
 
             {/* Hero Heading */}
-            <h1 className="text-4xl md:text-6xl font-[PP_Mori] font-semibold leading-[1.2] max-w-4xl">
+            <h1 className="text-2xl md:text-5xl sm:text-3xl lg:text-6xl font-[PP_Mori] font-semibold leading-[1.2] max-w-4xl">
               Your Data, <span className="text-yellow-400">your Power,</span>{" "}
               <br />
               under your control
@@ -154,7 +154,7 @@ export default function HomePage() {
           </div>
 
           {/* Floating Shapes */}
-          <div className="absolute bottom-60 left-20">
+          <div className="absolute bottom-60 left-20 hidden md:block">
             <Image
               src="/images/HomePage/Star.png"
               alt="star decoration"
@@ -163,7 +163,7 @@ export default function HomePage() {
             />
           </div>
 
-          <div className="absolute top-40 right-10">
+          <div className="absolute top-40 right-10 hidden md:block">
             <Image
               src="/images/HomePage/Star.png"
               alt="star decoration"
@@ -171,7 +171,7 @@ export default function HomePage() {
               height={92}
             />
           </div>
-          <div className="absolute top-30 right-60">
+          <div className="absolute top-30 right-60 hidden md:block">
             <Image
               src="/images/HomePage/Property 1=Group.png"
               alt="decoration"
@@ -179,7 +179,7 @@ export default function HomePage() {
               height={110}
             />
           </div>
-          <div className="absolute top-80 right-40">
+          <div className="absolute top-80 right-40 hidden md:block">
             <Image
               src="/images/HomePage/Computer Vision.png"
               alt="computer vision decoration"
@@ -187,7 +187,7 @@ export default function HomePage() {
               height={200}
             />
           </div>
-          <div className="absolute bottom-80 right-70">
+          <div className="absolute bottom-80 right-70 hidden md:block">
             <Image
               src="/images/HomePage/Vector.png"
               alt="vector decoration"
@@ -195,7 +195,7 @@ export default function HomePage() {
               height={200}
             />
           </div>
-          <div className="absolute bottom-10 right-10">
+          <div className="absolute bottom-10 right-10 hidden md:block">
             <Image
               src="/images/wave.svg"
               alt="wave decoration"
@@ -203,7 +203,7 @@ export default function HomePage() {
               height={400}
             />
           </div>
-          <div className="absolute top-60 left-40 scale-x-[-1]">
+          <div className="absolute top-60 left-40 scale-x-[-1] hidden md:block">
             <Image
               src="/images/wave.svg"
               alt="wave decoration"
@@ -211,7 +211,7 @@ export default function HomePage() {
               height={400}
             />
           </div>
-          <div className="absolute top-40 left-50">
+          <div className="absolute top-40 left-50 hidden md:block">
             <Image
               src="/images/HomePage/Property 2=Group.png"
               alt="decoration"
@@ -219,7 +219,7 @@ export default function HomePage() {
               height={80}
             />
           </div>
-          <div className="absolute top-95 left-40">
+          <div className="absolute top-95 left-40 hidden md:block">
             <Image
               src="/images/HomePage/Data Science.png"
               alt="data science decoration"
@@ -227,7 +227,7 @@ export default function HomePage() {
               height={200}
             />
           </div>
-          <div className="absolute bottom-60 left-60">
+          <div className="absolute bottom-60 left-60 hidden md:block">
             <Image
               src="/images/HomePage/Property 3=Group.png"
               alt="decoration"

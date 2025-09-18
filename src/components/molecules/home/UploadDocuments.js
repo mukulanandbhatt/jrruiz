@@ -5,7 +5,7 @@ const UploadDocuments = () => {
     <section className="bg-white py-16 px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto max-w-7xl flex flex-col lg:flex-row items-start lg:items-center justify-between gap-12">
         <div className="w-full lg:w-1/2">
-          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-4 leading-tight">
+          <h1 className="text-2xl md:text-5xl sm:text-3xl lg:text-6xl font-bold text-gray-900 mb-4 leading-tight">
             Upload, Extract, Analysis <br />
             all your Documents <br />
             <span className="text-blue-600">automatically</span>

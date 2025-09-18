@@ -4,7 +4,7 @@ const BusinessFeatures = () => {
   return (
     <div className="bg-white py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+        <h2 className="text-2xl sm:text-2xl md:text-4xl font-bold tracking-tight">
           Made in Europe, Designed for the World
         </h2>
         <p className="mt-4 max-w-2xl mx-auto text-lg">

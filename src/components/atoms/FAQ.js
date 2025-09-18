@@ -94,7 +94,7 @@ const FAQ = () => {
   return (
     <div className="min-h-screen bg-gray-50 font-sans p-8 md:p-12 lg:p-16 flex items-center justify-center">
       <div className="w-full max-w-7xl">
-        <h1 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">
+        <h1 className="text-2xl sm:text-2xl md:text-4xl font-bold text-center mb-12 text-gray-900">
           Frequently Ask Questions
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

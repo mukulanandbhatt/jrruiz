@@ -30,11 +30,12 @@ const Benefits = () => {
 
   return (
     <>
-      <section className="text-white py-16 px-4 sm:px-6 lg:px-8 overflow-x-hidden">
-        <div className="bg-blue-600 mx-auto w-full flex flex-col md:flex-row items-center justify-between gap-12 p-8 rounded-[30px]">
+      <section className="min-h-[300px] md:min-h-[500px] lg:min-h-[600px] text-white py-16 px-4 sm:px-6 lg:px-8 overflow-x-hidden">
+      <div className="bg-blue-600 mx-auto w-full flex flex-col md:flex-row items-center justify-between gap-0 md:gap-12 p-8 rounded-[30px]">
+
           <div className="w-full md:w-1/2">
             <h2
-              className="text-4xl font-bold mb-8"
+              className="text-2xl sm:text-2xl md:text-4xl font-bold mb-8"
               style={{ fontFamily: "PP Neue Montreal, sans-serif" }}
             >
               Key Benefits
