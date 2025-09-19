@@ -1,73 +1,25 @@
+"use client";
+
 import React from "react";
-
-const SecureDataVaultIllustration = () => (
-  <img
-    src="/images/AI tools/01.jpg"
-    alt="Secure Data Vault"
-    className="w-full h-28 sm:h-40 md:h-45 object-cover rounded-lg"
-  />
-);
-
-const SmartAlertsIllustration = () => (
-  <img
-    src="/images/AI tools/02.jpg"
-    alt="Smart Alerts"
-    className="w-full h-28 sm:h-40 md:h-45 object-cover rounded-lg"
-  />
-);
-
-const AiContractSummaryIllustration = () => (
-  <img
-    src="/images/AI tools/03.jpg"
-    alt="AI Contract Summary"
-    className="w-full h-28 sm:h-40 md:h-45 object-cover rounded-lg"
-  />
-);
-
-const RiskScoringIllustration = () => (
-  <img
-    src="/images/AI tools/04.jpg"
-    alt="Risk Scoring & Guidance"
-    className="w-full h-28 sm:h-40 md:h-45 object-cover rounded-lg"
-  />
-);
-
-const OneClickIllustration = () => (
-  <img
-    src="/images/AI tools/05.jpg"
-    alt="One-Click Actions"
-    className="w-full h-28 sm:h-40 md:h-45 object-cover rounded-lg"
-  />
-);
-
-const MultilingualIllustration = () => (
-  <img
-    src="/images/AI tools/06.jpg"
-    alt="Multilingual Translation"
-    className="w-full h-28 sm:h-40 md:h-45 object-cover rounded-lg"
-  />
-);
+import { motion } from "framer-motion";
 
 const FeatureCard = ({ title, description, illustration }) => {
   return (
-    <div
-      className="
-        bg-white 
-        rounded-xl 
-        shadow-lg 
-        p-4 sm:p-6 
-        border 
-        border-gray-100
-      "
+    <motion.div
+      whileHover={{ rotateY: 180 }}
+      transition={{ duration: 0.6 }}
+      className="relative w-full h-64 sm:h-72 [transform-style:preserve-3d] cursor-pointer"
     >
-      <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2">
-        {title}
-      </h3>
-      <p className="text-xs sm:text-sm text-gray-600 mb-4 sm:mb-6">
-        {description}
-      </p>
-      {illustration}
-    </div>
+      <div className="absolute inset-0 bg-white rounded-xl shadow-lg p-6 border border-gray-100 flex flex-col items-center justify-center text-center [backface-visibility:hidden]">
+        <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-3">
+          {title}
+        </h3>
+        <p className="text-sm sm:text-base text-gray-600">{description}</p>
+      </div>
+      <div className="absolute inset-0 bg-white rounded-xl shadow-lg p-4 sm:p-6 border border-gray-100 flex items-center justify-center [transform:rotateY(180deg)] [backface-visibility:hidden]">
+        {illustration}
+      </div>
+    </motion.div>
   );
 };
 
@@ -85,47 +37,72 @@ const Features = () => {
           </p>
         </div>
 
-        <div
-          className="
-    grid 
-    grid-cols-2     /* Show 2 cards per row on mobile */
-    sm:grid-cols-2  /* Keep 2 columns for small screens (>=640px) */
-    md:grid-cols-2  /* 2 columns for medium screens (>=768px) */
-    lg:grid-cols-2  /* Optional: 3 columns on larger screens if you want */
-    gap-6 sm:gap-8
-  "
-        >
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           <FeatureCard
             title="Secure Data Vault"
             description="Store contracts, invoices, and letters in AES-256 encrypted EU cloud."
-            illustration={<SecureDataVaultIllustration />}
+            illustration={
+              <img
+                src="/images/AI tools/01.jpg"
+                alt="Secure Data Vault"
+                className="w-full h-full object-cover rounded-lg"
+              />
+            }
           />
           <FeatureCard
             title="Smart Alerts"
             description="Get notified of deadlines, renewals, or risks before it’s too late."
-            illustration={<SmartAlertsIllustration />}
+            illustration={
+              <img
+                src="/images/AI tools/02.jpg"
+                alt="Smart Alerts"
+                className="w-full h-full object-cover rounded-lg"
+              />
+            }
           />
           <FeatureCard
             title="AI Contract Summary"
             description="Understand any legal document in 60 seconds, plain language."
-            illustration={<AiContractSummaryIllustration />}
+            illustration={
+              <img
+                src="/images/AI tools/03.jpg"
+                alt="AI Contract Summary"
+                className="w-full h-full object-cover rounded-lg"
+              />
+            }
           />
           <FeatureCard
             title="Risk Scoring & Guidance"
             description="Traffic-light system + next steps recommended by AI."
-            illustration={<RiskScoringIllustration />}
+            illustration={
+              <img
+                src="/images/AI tools/04.jpg"
+                alt="Risk Scoring & Guidance"
+                className="w-full h-full object-cover rounded-lg"
+              />
+            }
           />
-
           <FeatureCard
             title="One-Click Actions"
             description="Cancel, claim, send to lawyer — without leaving Clario."
-            illustration={<OneClickIllustration />}
+            illustration={
+              <img
+                src="/images/AI tools/05.jpg"
+                alt="One-Click Actions"
+                className="w-full h-full object-cover rounded-lg"
+              />
+            }
           />
-
           <FeatureCard
             title="Multilingual Translation"
             description="Auto legal translations (EN, ES, DE, FR + more)."
-            illustration={<MultilingualIllustration />}
+            illustration={
+              <img
+                src="/images/AI tools/06.jpg"
+                alt="Multilingual Translation"
+                className="w-full h-full object-cover rounded-lg"
+              />
+            }
           />
         </div>
       </div>
@@ -134,3 +111,4 @@ const Features = () => {
 };
 
 export default Features;
+

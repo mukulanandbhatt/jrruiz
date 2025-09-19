@@ -1,4 +1,5 @@
-import React from "react";
+"use client"
+import React, { useEffect, useState } from "react";
 
 const CommandPlusRLogo = () => (
   <img
@@ -73,6 +74,12 @@ const LuminousLogo = () => (
 );
 
 const Brands = () => {
+  const [animate, setAnimate] = useState(false);
+
+  useEffect(() => {
+    setAnimate(true);
+  }, []);
+
   const logos = [
     { name: "Command+R", Component: CommandPlusRLogo },
     { name: "GlobalBank", Component: GlobalBankLogo },
@@ -83,20 +90,64 @@ const Brands = () => {
   ];
 
   return (
-    <div className="bg-blue-600 rounded-2xl p-4 md:p-6 mr-5 ml-5 mb-10">
-      <div className="flex flex-wrap items-center justify-around gap-x-8 gap-y-4 px-4 py-2 sm:px-6 lg:px-8">
-        {logos.map((logo, index) => (
-          <div
-            key={index}
-            className="flex items-center space-x-2 text-white text-xl font-bold"
-          >
+    <>
+    <div
+      style={{
+        overflowX: "hidden",
+        width: "100%",
+        maxWidth: "100%",
+        backgroundColor: "#2563eb",
+        borderRadius: "1rem",
+        padding: '1rem 1rem',
+        margin: '0 0',
+        boxSizing: 'border-box',
+      }}
+    >
+      <style>
+        {`
+          @keyframes slide {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+          }
+          .slider-track {
+            display: flex;
+            width: max-content;
+            animation: slide 20s linear infinite;
+            white-space: nowrap;
+          }
+          .logo-item {
+            display: flex;
+            align-items: center;
+            margin-right: 2rem;
+            color: white;
+            font-weight: bold;
+            font-size: 1.25rem;
+            white-space: nowrap;
+          }
+          @media (max-width: 640px) {
+            .logo-item {
+              font-size: 1rem;
+              margin-right: 1rem;
+              min-width: 90px;
+            }
+          }
+        `}
+      </style>
+      <div className="slider-track" aria-label="Scrolling brands logos">
+        {[...logos, ...logos].map((logo, index) => (
+          <div key={index} className="logo-item">
             <logo.Component />
-            <span className="hidden sm:inline">{logo.name}</span>
+            <span className="hidden sm:inline" style={{ marginLeft: "0.5rem" }}>
+              {logo.name}
+            </span>
           </div>
         ))}
       </div>
     </div>
+    </>
   );
 };
 
+
 export default Brands;
+

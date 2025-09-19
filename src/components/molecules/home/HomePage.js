@@ -6,8 +6,9 @@ import WhyUs from "./WhyUs";
 import Brands from "./Brands";
 import Features from "./Features";
 import Benefits from "./Benefits";
-import UploadDocuments from "./UploadDocuments";
+import UploadDocuments from "./UploadDocument/UploadDocuments";
 import TargetAudience from "./TargetAudience";
+import VideoPage from "./VideoPage"
 import TrustSection from "./TrustSection";
 import BusinessFeatures from "./BusinessFeatures";
 import ClarioProcess from "./ClarioProcess";
@@ -134,21 +135,21 @@ export default function HomePage() {
             </div>
 
             <p className="mt-10 text-[25px] leading-[35px] font-[PP_Neue_Montreal] font-medium text-white text-center md:text-left">
-              Our Clario.AI Assistant will:
+              Our Clario.AI key features will:
             </p>
             {/* Feature Buttons */}
             <div className="mt-7 flex flex-wrap justify-center gap-4">
               <span className="flex items-center gap-2 px-6 py-3 bg-[#1C1C1E] rounded-full text-sm md:text-base text-gray-200">
                 <img src="/images/HomePage/Right tick.png" alt="Right tick" />
-                Answer emails & analyze documents
+                Automatic summary Ai, <br/> tranlations Ai, riks indicator
               </span>
               <span className="flex items-center gap-2 px-6 py-3 bg-[#1C1C1E] rounded-full text-sm md:text-base text-gray-200">
                 <img src="/images/HomePage/Right tick.png" alt="Right tick" />
-                Sign documents automatically
+                Meet LExi.Ai our Legal Chatbot
               </span>
               <span className="flex items-center gap-2 px-6 py-3 bg-[#1C1C1E] rounded-full text-sm md:text-base text-gray-200">
                 <img src="/images/HomePage/Right tick.png" alt="Right tick" />
-                Compare contracts with legal precision
+                Autofill, sign and Send documents
               </span>
             </div>
           </div>
@@ -179,12 +180,21 @@ export default function HomePage() {
               height={110}
             />
           </div>
-          <div className="absolute top-80 right-40 hidden md:block">
+          {/* <div className="absolute top-80 right-40 hidden md:block">
             <Image
               src="/images/HomePage/Computer Vision.png"
               alt="computer vision decoration"
               width={150}
               height={200}
+            />
+          </div> */}
+          <div className="absolute top-80 right-40 hidden md:block bg-transparent">
+            <Image
+              src="/images/HomePage/Gemini_Generated_Image_p21zalp21zalp21z.png"
+              alt="contracts decoration"
+              width={150}
+              height={200}
+              className="bg-none"
             />
           </div>
           <div className="absolute bottom-80 right-70 hidden md:block">
@@ -244,6 +254,7 @@ export default function HomePage() {
       <Benefits />
       <UploadDocuments />
       <TargetAudience />
+      <VideoPage />
       <TrustSection />
       <BusinessFeatures />
       <ClarioProcess />

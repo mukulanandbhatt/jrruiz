@@ -66,7 +66,10 @@ const plans = [
 
 const Pricing = () => {
   return (
-    <div className="py-16 px-4 sm:px-6 relative overflow-hidden">
+    <>
+    
+    <div id='pricing' class="scroll-mt-20"></div>
+    <div className="py-16 bg-white px-4 sm:px-6 relative overflow-hidden">
       <div
         className="absolute top-0 right-0 w-full sm:w-2/3 lg:w-1/2 h-auto opacity-70 z-0"
         style={{
@@ -131,6 +134,8 @@ const Pricing = () => {
         </p>
       </div>
     </div>
+    
+    </>
   );
 };
 

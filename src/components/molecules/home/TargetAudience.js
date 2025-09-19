@@ -5,7 +5,7 @@ const TargetAudience = () => {
     <>
     <section className="relative overflow-hidden bg-[#f5f3ff] py-10 sm:py-20 px-4 sm:px-6 lg:px-8">
       <div
-        className="absolute top-0 left-0 w-[300px] h-[300px] bg-no-repeat bg-contain z-0"
+        className="absolute top-0 left-0 w-[300px] h-[300px] bg-no-repeat bg-contain z-0 hidden md:block"
         style={{
           backgroundImage: `url('/images/wave.svg')`,
           transform: "scaleX(-1)",
@@ -13,7 +13,7 @@ const TargetAudience = () => {
       ></div>
 
       <div
-        className="absolute right-0 w-[300px] h-[300px] bg-no-repeat bg-contain"
+        className="absolute right-0 w-[300px] h-[300px] bg-no-repeat bg-contain hidden md:block"
         style={{ backgroundImage: `url('/images/wave.svg')`, bottom: "-180px" }}
       ></div>
 
@@ -39,8 +39,8 @@ const TargetAudience = () => {
               className="h-22 w-22"
             />
             <h2 className="text-xl font-semibold">Private Individuals</h2>
-            <div className="w-[47px] border-b-2 border-[#7C55FF] my-2"></div>
-            <p className="mt-2 text-sm">
+            <div className="w-[47px] border-b-2 border-[#7C55FF] my-2 hidden md:block"></div>
+            <p className="mt-2 text-sm hidden md:block">
               Manage rental agreements, phone <br /> contracts, insurance
               policies, and <br /> guarantees with ease.
             </p>
@@ -55,8 +55,8 @@ const TargetAudience = () => {
             <h2 className="text-xl font-semibold">
               Freelancers & Solopreneurs
             </h2>
-            <div className="w-[47px] border-b-2 border-[#7C55FF] my-2"></div>
-            <p className="mt-2 text-sm ">
+            <div className="w-[47px] border-b-2 border-[#7C55FF] my-2 hidden md:block"></div>
+            <p className="mt-2 text-sm hidden md:block ">
               Handle client contracts, invoices, and <br /> project agreements
               effortlessly.
             </p>
@@ -69,8 +69,8 @@ const TargetAudience = () => {
               className="h-22 w-22"
             />
             <h2 className="text-xl font-semibold">Startups & SMEs</h2>
-            <div className="w-[47px] border-b-2 border-[#7C55FF] my-2"></div>
-            <p className="mt-2 text-sm">
+            <div className="w-[47px] border-b-2 border-[#7C55FF] my-2 hidden md:block"></div>
+            <p className="mt-2 text-sm hidden md:block">
               Streamline employment contracts, supplier <br /> agreements, Terms
               & Conditions, and <br /> GDPR documents.
             </p>
@@ -83,8 +83,8 @@ const TargetAudience = () => {
               className="h-22 w-22"
             />
             <h2 className="text-xl font-semibold">Expatriates & Migrants</h2>
-            <div className="w-[47px] border-b-2 border-[#7C55FF] my-2"></div>
-            <p className="mt-2 text-sm">
+            <div className="w-[47px] border-b-2 border-[#7C55FF] my-2 hidden md:block"></div>
+            <p className="mt-2 text-sm hidden md:block">
               Navigate work Clario.AI abroad and <br /> communication with
               authorities in any <br /> language.
             </p>
@@ -92,7 +92,6 @@ const TargetAudience = () => {
         </div>
       </div>
     </section>
-    <img src='/images/Building Trust/bd03ef506a5ffb2401d55f477b8bc634351db58b.png' alt='Image' />
     </>
   );
 };

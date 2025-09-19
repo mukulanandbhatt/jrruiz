@@ -30,7 +30,7 @@ const Benefits = () => {
 
   return (
     <>
-      <section className="min-h-[300px] md:min-h-[500px] lg:min-h-[600px] text-white py-16 px-4 sm:px-6 lg:px-8 overflow-x-hidden">
+      <section className="min-h-[300px] bg-white md:min-h-[500px] lg:min-h-[600px] text-white py-16 px-4 sm:px-6 lg:px-8 overflow-x-hidden">
       <div className="bg-blue-600 mx-auto w-full flex flex-col md:flex-row items-center justify-between gap-0 md:gap-12 p-8 rounded-[30px]">
 
           <div className="w-full md:w-1/2">

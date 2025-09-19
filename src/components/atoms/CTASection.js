@@ -10,7 +10,7 @@ const CTASection = () => {
           alt="Decorative Ellipse"
         />
         <img
-          className="absolute left-1/4 transform -translate-x-1/2 w-[300px] sm:w-[700px] lg:w-[900px] h-auto"
+          className="absolute left-1/4 transform w-[300px] sm:w-[700px] lg:w-[900px] h-auto"
           src="/images/Pricing/Vector 7.png"
           alt="Decorative Wave"
         />

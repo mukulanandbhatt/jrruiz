@@ -3,19 +3,19 @@ import React from "react";
 const BusinessFeatures = () => {
   return (
     <div className="bg-white py-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto text-center">
+      <div className="max-w-7xl mx-auto text-center animate-fadeInUp">
         <h2 className="text-2xl sm:text-2xl md:text-4xl font-bold tracking-tight">
           Made in Europe, Designed for the World
         </h2>
         <p className="mt-4 max-w-2xl mx-auto text-lg">
-          When it comes to doing business, location plays an important role. Our
-          contract management software has been tailored specifically for the
-          requirements of European businesses.
+          When it comes to doing business, location plays an important role.
+          Our contract management software has been tailored specifically for
+          the requirements of European businesses.
         </p>
       </div>
 
       <div className="mt-16 max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
-        <div className="bg-white border border-gray-200 rounded-lg shadow-sm p-8 flex flex-col items-center">
+        <div className="bg-white border border-gray-200 rounded-lg shadow-md p-8 flex flex-col items-center transform transition duration-500 hover:scale-105 hover:shadow-xl animate-fadeInUp delay-100">
           <img
             className="w-full h-auto object-contain max-h-60"
             src="/images/protected.svg"
@@ -43,7 +43,7 @@ const BusinessFeatures = () => {
           </div>
         </div>
 
-        <div className="bg-white border border-gray-200 rounded-lg shadow-sm p-8 flex flex-col items-center">
+        <div className="bg-white border border-gray-200 rounded-lg shadow-md p-8 flex flex-col items-center transform transition duration-500 hover:scale-105 hover:shadow-xl animate-fadeInUp delay-200">
           <img
             className="w-full h-auto object-contain max-h-60"
             src="/images/Business tools.svg"
@@ -76,4 +76,3 @@ const BusinessFeatures = () => {
 };
 
 export default BusinessFeatures;
-

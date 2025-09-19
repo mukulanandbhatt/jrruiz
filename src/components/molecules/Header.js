@@ -12,7 +12,6 @@ export default function Header() {
     <>
       <header className="fixed top-5 left-1/2 -translate-x-1/2 z-50 w-11/12 max-w-[1296px] px-4 md:px-8">
         <div className="flex items-center justify-between bg-white backdrop-blur-md border border-gray-200 shadow-md px-4 py-4 rounded-full">
-          {/* Logo */}
           <Link href="/" onClick={() => setActiveNav("/")}>
             <Image
               src="/images/Frame 5.png"
@@ -23,95 +22,92 @@ export default function Header() {
             />
           </Link>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-8 font-medium text-gray-700 dark:text-gray-200">
+          <nav className="hidden lg:flex items-center space-x-8 font-medium text-gray-700 ">
             <Link
               href="#"
               className={`relative flex items-center gap-1 hover:text-blue-500 ${
-                activeNav === "/product" ? "text-blue-500" : ""
+                activeNav === "/clario.ai" ? "text-blue-500" : ""
               }`}
-              onClick={() => setActiveNav("/product")}
+              onClick={() => setActiveNav("/clario.ai")}
             >
-              Product
-              <span
+              Whats Clario.AI?
+              {/* <span
                 className={`inline-block w-2 h-2 border-r-2 border-b-2 ${
-                  activeNav === "/product"
+                  activeNav === "/clario.ai"
                     ? "border-blue-500"
-                    : "border-gray-700 dark:border-gray-200"
+                    : "border-gray-700"
                 } rotate-45 transition-transform duration-300`}
-              />
+              /> */}
             </Link>
             <Link
-              href="#"
+              href="#usecases"
               className={`relative flex items-center gap-1 hover:text-blue-500 ${
-                activeNav === "/use-cases" ? "text-blue-500" : ""
+                activeNav === "/usecases" ? "text-blue-500" : ""
               }`}
-              onClick={() => setActiveNav("/use-cases")}
+              onClick={() => setActiveNav("/usecases")}
             >
               Use Cases
-              <span
+              {/* <span
                 className={`inline-block w-2 h-2 border-r-2 border-b-2 ${
-                  activeNav === "/use-cases"
+                  activeNav === "/usecases"
                     ? "border-blue-500"
-                    : "border-gray-700 dark:border-gray-200"
+                    : "border-gray-700 "
                 } rotate-45 transition-transform duration-300`}
-              />
+              /> */}
             </Link>
             <Link
-              href="#"
+              href="#storytelling"
+              className={`relative flex items-center gap-1 hover:text-blue-500 ${
+                activeNav === "/storytelling" ? "text-blue-500" : ""
+              }`}
+              onClick={() => setActiveNav("/stortelling")}
+            >
+              Story Telling
+              {/* <span
+                className={`inline-block w-2 h-2 border-r-2 border-b-2 ${
+                  activeNav === "/storytelling"
+                    ? "border-blue-500"
+                    : "border-gray-700"
+                } rotate-45 transition-transform duration-300`}
+              /> */}
+            </Link>
+            <Link
+              href="#pricing"
               className={`relative flex items-center gap-1 hover:text-blue-500 ${
                 activeNav === "/pricing" ? "text-blue-500" : ""
               }`}
               onClick={() => setActiveNav("/pricing")}
             >
               Pricing
-              <span
+              {/* <span
                 className={`inline-block w-2 h-2 border-r-2 border-b-2 ${
                   activeNav === "/pricing"
                     ? "border-blue-500"
-                    : "border-gray-700 dark:border-gray-200"
+                    : "border-gray-700 "
                 } rotate-45 transition-transform duration-300`}
-              />
+              /> */}
             </Link>
             <Link
-              href="#"
+              href="#faq"
               className={`relative flex items-center gap-1 hover:text-blue-500 ${
-                activeNav === "/resources" ? "text-blue-500" : ""
+                activeNav === "/faq" ? "text-blue-500" : ""
               }`}
-              onClick={() => setActiveNav("/resources")}
+              onClick={() => setActiveNav("/faq")}
             >
-              Resources
-              <span
+              FAQ
+              {/* <span
                 className={`inline-block w-2 h-2 border-r-2 border-b-2 ${
-                  activeNav === "/resources"
+                  activeNav === "/faq"
                     ? "border-blue-500"
-                    : "border-gray-700 dark:border-gray-200"
+                    : "border-gray-700 "
                 } rotate-45 transition-transform duration-300`}
-              />
-            </Link>
-            <Link
-              href="#"
-              className={`relative flex items-center gap-1 hover:text-blue-500 ${
-                activeNav === "/enterprise" ? "text-blue-500" : ""
-              }`}
-              onClick={() => setActiveNav("/enterprise")}
-            >
-              Enterprise
-              <span
-                className={`inline-block w-2 h-2 border-r-2 border-b-2 ${
-                  activeNav === "/enterprise"
-                    ? "border-blue-500"
-                    : "border-gray-700 dark:border-gray-200"
-                } rotate-45 transition-transform duration-300`}
-              />
+              /> */}
             </Link>
           </nav>
-
-          {/* Buttons - Hidden on small screens to make space for the menu */}
           <div className="hidden lg:flex items-center space-x-3">
             <Link
               href="/signin"
-              className="px-5 py-2 rounded-full border border-gray-400 text-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition"
+              className="px-5 py-2 rounded-full border border-gray-400 text-gray-700  hover:bg-gray-100  transition"
             >
               Sign in
             </Link>
@@ -122,12 +118,10 @@ export default function Header() {
               Get started
             </Link>
           </div>
-
-          {/* Hamburger menu button for mobile */}
           <div className="lg:hidden flex items-center">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="p-2 text-gray-700 dark:text-gray-200 focus:outline-none"
+              className="p-2 text-gray-700  focus:outline-none"
               aria-label="Toggle menu"
             >
               {isMenuOpen ? (
@@ -166,36 +160,47 @@ export default function Header() {
         </div>
       </header>
 
-      {/* Mobile Dropdown Menu */}
       {isMenuOpen && (
         <div className="lg:hidden fixed top-[90px] left-1/2 -translate-x-1/2 z-40 w-11/12 max-w-[1296px] bg-white/90 backdrop-blur-md border-t border-gray-200 shadow-lg py-4 rounded-b-lg">
-          <nav className="flex flex-col items-center space-y-4 font-medium text-gray-700 dark:text-gray-200">
+          <nav className="flex flex-col items-center space-y-4 font-medium text-gray-700 ">
             <Link
               href="#"
               className={`w-full text-center py-2 hover:bg-gray-100 rounded-lg ${
-                activeNav === "/product" ? "text-blue-500" : ""
+                activeNav === "/clario.ai" ? "text-blue-500" : ""
               }`}
               onClick={() => {
-                setActiveNav("/product");
+                setActiveNav("/clario.ai");
                 setIsMenuOpen(false);
               }}
             >
-              Product
+              What Clario.AI?
             </Link>
             <Link
-              href="#"
+              href="#usecases"
               className={`w-full text-center py-2 hover:bg-gray-100 rounded-lg ${
-                activeNav === "/use-cases" ? "text-blue-500" : ""
+                activeNav === "/usecases" ? "text-blue-500" : ""
               }`}
               onClick={() => {
-                setActiveNav("/use-cases");
+                setActiveNav("/usecases");
                 setIsMenuOpen(false);
               }}
             >
               Use Cases
             </Link>
             <Link
-              href="#"
+              href="#storytelling"
+              className={`w-full text-center py-2 hover:bg-gray-100 rounded-lg ${
+                activeNav === "/storytelling" ? "text-blue-500" : ""
+              }`}
+              onClick={() => {
+                setActiveNav("/storytelling");
+                setIsMenuOpen(false);
+              }}
+            >
+              Story telling
+            </Link>
+            <Link
+              href="#pricing"
               className={`w-full text-center py-2 hover:bg-gray-100 rounded-lg ${
                 activeNav === "/pricing" ? "text-blue-500" : ""
               }`}
@@ -207,33 +212,21 @@ export default function Header() {
               Pricing
             </Link>
             <Link
-              href="#"
+              href="#faq"
               className={`w-full text-center py-2 hover:bg-gray-100 rounded-lg ${
-                activeNav === "/resources" ? "text-blue-500" : ""
+                activeNav === "/faq" ? "text-blue-500" : ""
               }`}
               onClick={() => {
-                setActiveNav("/resources");
+                setActiveNav("/faq");
                 setIsMenuOpen(false);
               }}
             >
-              Resources
-            </Link>
-            <Link
-              href="#"
-              className={`w-full text-center py-2 hover:bg-gray-100 rounded-lg ${
-                activeNav === "/enterprise" ? "text-blue-500" : ""
-              }`}
-              onClick={() => {
-                setActiveNav("/enterprise");
-                setIsMenuOpen(false);
-              }}
-            >
-              Enterprise
+              FAQ
             </Link>
             <div className="flex flex-col space-y-2 w-full mt-4">
               <Link
                 href="/signin"
-                className="w-full text-center px-5 py-2 rounded-full border border-gray-400 text-gray-700 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition"
+                className="w-full text-center px-5 py-2 rounded-full border border-gray-400 text-gray-700  hover:bg-gray-100 transition"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Sign in
