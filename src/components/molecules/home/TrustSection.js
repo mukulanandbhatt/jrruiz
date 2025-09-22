@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useRef } from "react";
+import React from "react";
 
 const TrustSection = () => {
   const images = [
@@ -37,35 +37,21 @@ const TrustSection = () => {
     },
     {
       src: "/images/Building Trust/208597c8b7c122c36d67c4a5db0847c3bfb3e6c9.png",
-      alt: "HI TRUST logo"
+      alt: "HI TRUST logo",
     },
     {
       src: "/images/Building Trust/a9c83c09bb622da318b00af25a889fac754ede5f.png",
-      alt: "USDP logo"
+      alt: "USDP logo",
     },
     {
       src: "/images/Building Trust/cdeb533296ad4ee002a1e16bfc28e5f6cddb357a.png",
-      alt: "NST logo"
+      alt: "NST logo",
     },
     {
       src: "/images/Building Trust/9c1b697114933d21a9feba0383ffedd627f14445.png",
-      alt: "ISO 42001 logo"
+      alt: "ISO 42001 logo",
     },
   ];
-
-  const carouselRef = useRef(null);
-
-  const slideLeft = () => {
-    if (carouselRef.current) {
-      carouselRef.current.scrollLeft -= 200;
-    }
-  };
-
-  const slideRight = () => {
-    if (carouselRef.current) {
-      carouselRef.current.scrollLeft += 200;
-    }
-  };
 
   return (
     <>
@@ -76,66 +62,19 @@ const TrustSection = () => {
             Your data security is our top priority
           </p>
 
-          <div className="relative mt-12 flex items-center justify-center">
-            <button
-              onClick={slideLeft}
-              className="absolute left-0 z-20 p-2 text-gray-600 hover:text-gray-800 focus:outline-none transition-transform duration-300 ease-in-out hover:scale-110
-  bg-white rounded-full shadow-md"
-              aria-label="Previous Slide"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-8 w-8"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M15 19l-7-7 7-7"
+          <div className="mt-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center justify-items-center">
+            {images.map((image, index) => (
+              <div key={index} className="flex justify-center items-center">
+                <img
+                  src={image.src}
+                  alt={image.alt}
+                  className="max-h-16 md:max-h-20 object-contain"
                 />
-              </svg>
-            </button>
-
-            <div
-              ref={carouselRef}
-              className="flex overflow-x-hidden scroll-smooth justify-start items-center space-x-8 md:space-x-12 p-4 w-full"
-            >
-              {images.map((image, index) => (
-                <div key={index} className="flex-shrink-0 w-24 md:w-32">
-                  <img src={image.src} alt={image.alt} className="mx-auto" />
-                </div>
-              ))}
-            </div>
-
-            <button
-              onClick={slideRight}
-              className="absolute right-0 z-20 p-2 text-gray-600 hover:text-gray-800 focus:outline-none transition-transform duration-300 ease-in-out hover:scale-110
-  bg-white rounded-full shadow-md"
-              aria-label="Next Slide"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-8 w-8"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
-            </button>
+              </div>
+            ))}
           </div>
         </div>
       </div>
-
-      {/* WorkFlow */}
 
       <div className="bg-white py-12">
         <div className="container mx-auto px-4 text-center">
@@ -151,9 +90,7 @@ const TrustSection = () => {
             </div>
 
             <div className="bg-gray-50 rounded-lg p-6 shadow-sm border border-gray-100 flex flex-col items-center text-center">
-              <div className="flex items-center justify-center">
-                <h3 className="text-3xl font-bold text-indigo-700">90</h3>
-              </div>
+              <h3 className="text-3xl font-bold text-indigo-700">90</h3>
               <p className="mt-4 ">
                 Saved time when processing personal
                 <br /> documents

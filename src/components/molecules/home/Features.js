@@ -7,7 +7,7 @@ const FeatureCard = ({ title, description, illustration }) => {
   return (
     <motion.div
       whileHover={{ rotateY: 180 }}
-      transition={{ duration: 0.6 }}
+      transition={{ duration: 0.8 }}
       className="relative w-full h-64 sm:h-72 [transform-style:preserve-3d] cursor-pointer"
     >
       <div className="absolute inset-0 bg-white rounded-xl shadow-lg p-6 border border-gray-100 flex flex-col items-center justify-center text-center [backface-visibility:hidden]">
@@ -20,6 +20,7 @@ const FeatureCard = ({ title, description, illustration }) => {
         {illustration}
       </div>
     </motion.div>
+
   );
 };
 
@@ -39,28 +40,6 @@ const Features = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           <FeatureCard
-            title="Secure Data Vault"
-            description="Store contracts, invoices, and letters in AES-256 encrypted EU cloud."
-            illustration={
-              <img
-                src="/images/AI tools/01.jpg"
-                alt="Secure Data Vault"
-                className="w-full h-full object-cover rounded-lg"
-              />
-            }
-          />
-          <FeatureCard
-            title="Smart Alerts"
-            description="Get notified of deadlines, renewals, or risks before it’s too late."
-            illustration={
-              <img
-                src="/images/AI tools/02.jpg"
-                alt="Smart Alerts"
-                className="w-full h-full object-cover rounded-lg"
-              />
-            }
-          />
-          <FeatureCard
             title="AI Contract Summary"
             description="Understand any legal document in 60 seconds, plain language."
             illustration={
@@ -72,12 +51,12 @@ const Features = () => {
             }
           />
           <FeatureCard
-            title="Risk Scoring & Guidance"
-            description="Traffic-light system + next steps recommended by AI."
+            title="Multilingual Translation"
+            description="Auto legal translations (EN, ES, DE, FR + more)."
             illustration={
               <img
-                src="/images/AI tools/04.jpg"
-                alt="Risk Scoring & Guidance"
+                src="/images/AI tools/06.jpg"
+                alt="Multilingual Translation"
                 className="w-full h-full object-cover rounded-lg"
               />
             }
@@ -94,16 +73,39 @@ const Features = () => {
             }
           />
           <FeatureCard
-            title="Multilingual Translation"
-            description="Auto legal translations (EN, ES, DE, FR + more)."
+            title="Smart Alerts"
+            description="Get notified of deadlines, renewals, or risks before it’s too late."
             illustration={
               <img
-                src="/images/AI tools/06.jpg"
-                alt="Multilingual Translation"
+                src="/images/AI tools/02.jpg"
+                alt="Smart Alerts"
                 className="w-full h-full object-cover rounded-lg"
               />
             }
           />
+          <FeatureCard
+            title="Risk Scoring & Guidance"
+            description="Traffic-light system + next steps recommended by AI."
+            illustration={
+              <img
+                src="/images/AI tools/04.jpg"
+                alt="Risk Scoring & Guidance"
+                className="w-full h-full object-cover rounded-lg"
+              />
+            }
+          />
+          <FeatureCard
+            title="Secure Data Vault"
+            description="Store contracts, invoices, and letters in AES-256 encrypted EU cloud."
+            illustration={
+              <img
+                src="/images/AI tools/01.jpg"
+                alt="Secure Data Vault"
+                className="w-full h-full object-cover rounded-lg"
+              />
+            }
+          />
+                    
         </div>
       </div>
     </section>
@@ -111,4 +113,3 @@ const Features = () => {
 };
 
 export default Features;
-

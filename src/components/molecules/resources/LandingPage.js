@@ -55,7 +55,7 @@ const LandingPage = () => {
             legal clarity.
           </p>
           <div className="flex justify-center">
-            <button className="mt-8 px-6 py-3 bg-white text-black font-semibold rounded-full shadow-lg flex items-center group">
+            <button className="mt-8 px-6 py-3 bg-white text-black font-semibold rounded-full shadow-lg flex items-center group cursor-pointer">
               Request a Demo
               <span className="ml-2 font-semibold">&rarr;</span>
             </button>

@@ -8,23 +8,24 @@ import Features from "./Features";
 import Benefits from "./Benefits";
 import UploadDocuments from "./UploadDocument/UploadDocuments";
 import TargetAudience from "./TargetAudience";
-import VideoPage from "./VideoPage"
+import VideoPage from "./VideoPage";
 import TrustSection from "./TrustSection";
 import BusinessFeatures from "./BusinessFeatures";
 import ClarioProcess from "./ClarioProcess";
 import ClarioUse from "./ClarioUse";
-import Testimonials from './Testimonials'
-import Connect from '../../atoms/Connect'
-import Pricing from '../../atoms/Pricing'
-import CTASection from '../../atoms/CTASection'
-import FAQ from '../../atoms/FAQ'
+import Testimonials from "./Testimonials";
+import Connect from "../../atoms/Connect";
+import Pricing from "../../atoms/Pricing";
+import CTASection from "../../atoms/CTASection";
+import FAQ from "../../atoms/FAQ";
+import { Cover } from "../Button/Cover";
 
 export default function HomePage() {
   return (
     <>
       <main className="bg-[#0B002E] min-h-screen text-white">
         {/* Hero Section */}
-        <section className="relative overflow-hidden">
+        <section className="relative overflow-hidden mt-20">
           <div
             className="container mx-auto px-6 lg:px-16 flex flex-col items-center text-center pt-20 pb-32"
             style={{
@@ -129,8 +130,11 @@ export default function HomePage() {
 
             {/* CTA Button */}
             <div className="mt-8">
-              <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full flex items-center gap-2 text-lg font-medium transition">
-                Discover Your New Power <FaArrowRight />
+              <button className="relative  dark:border-white px-8 py-3 flex items-center justify-center gap-2 text-lg font-medium transition cursor-pointer overflow-hidden">
+                <Cover className="flex items-center gap-2">
+                  <span>Discover Your New Power</span>
+                  <FaArrowRight />
+                </Cover>
               </button>
             </div>
 
@@ -141,7 +145,7 @@ export default function HomePage() {
             <div className="mt-7 flex flex-wrap justify-center gap-4">
               <span className="flex items-center gap-2 px-6 py-3 bg-[#1C1C1E] rounded-full text-sm md:text-base text-gray-200">
                 <img src="/images/HomePage/Right tick.png" alt="Right tick" />
-                Automatic summary Ai, <br/> tranlations Ai, riks indicator
+                Automatic summary Ai, <br /> tranlations Ai, riks indicator
               </span>
               <span className="flex items-center gap-2 px-6 py-3 bg-[#1C1C1E] rounded-full text-sm md:text-base text-gray-200">
                 <img src="/images/HomePage/Right tick.png" alt="Right tick" />
@@ -180,20 +184,12 @@ export default function HomePage() {
               height={110}
             />
           </div>
-          {/* <div className="absolute top-80 right-40 hidden md:block">
-            <Image
-              src="/images/HomePage/Computer Vision.png"
-              alt="computer vision decoration"
-              width={150}
-              height={200}
-            />
-          </div> */}
           <div className="absolute top-80 right-40 hidden md:block bg-transparent">
             <Image
-              src="/images/HomePage/Gemini_Generated_Image_p21zalp21zalp21z.png"
+              src="/images/HomePage/Gemini_Generated_Image_p21zalp21zalp21z-removebg-preview.png"
               alt="contracts decoration"
-              width={150}
-              height={200}
+              width={170}
+              height={300}
               className="bg-none"
             />
           </div>
@@ -224,15 +220,23 @@ export default function HomePage() {
           <div className="absolute top-40 left-50 hidden md:block">
             <Image
               src="/images/HomePage/Property 2=Group.png"
-              alt="decoration"
-              width={80}
-              height={80}
+              alt="Message decoration"
+              width={60}
+              height={60}
+            />
+          </div>
+          <div className="absolute top-20 left-90 hidden md:block">
+            <Image
+              src="/images/HomePage/Emails.svg"
+              alt=" Email decoration"
+              width={150}
+              height={150}
             />
           </div>
           <div className="absolute top-95 left-40 hidden md:block">
             <Image
-              src="/images/HomePage/Data Science.png"
-              alt="data science decoration"
+              src="/images/HomePage/Group 1597883996.svg"
+              alt="invoices decoration"
               width={150}
               height={200}
             />

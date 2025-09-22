@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import Overview from '../../atoms/Overview'
 
 const Star = () => (
   <img
@@ -200,7 +199,6 @@ const Testimonials = () => {
         </div>
       </div>
     </section>
-    <Overview />
     </>
   );
 };

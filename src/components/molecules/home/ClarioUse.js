@@ -102,17 +102,16 @@ const accordionData = [
 function ClarioUse() {
   return (
     <>
-    <div id='usecases' class="scroll-mt-20"></div>
     <div className="min-h-screen bg-white py-20 px-4 relative overflow-hidden">
       <div
-        className="absolute z-0 w-64 h-48 md:w-96 md:h-64 top-1/4 right-1/4 transform translate-x-1/2 -translate-y-1/2 bg-cover bg-center"
+        className="absolute z-0 w-64 h-48 md:w-96 md:h-64 top-1/2 right-1/3 transform translate-x-1/2 -translate-y-1/2 bg-cover bg-center"
         style={{
           backgroundImage: "url('/images/HomePage/Vector.svg')",
           opacity: 0.7
         }}
       />
       <div
-        className="absolute z-0 w-64 h-48 md:w-96 md:h-64 top-[5%] right-1/4 transform translate-x-1/2 -translate-y-1/2 bg-cover bg-center"
+        className="absolute z-0 w-64 h-48 md:w-96 md:h-64 top-1/3 right-1/3 transform translate-x-1/2 -translate-y-1/2 bg-cover bg-center"
         style={{
           backgroundImage: "url('/images/HomePage/Vector1.svg')",
           opacity: 0.7
