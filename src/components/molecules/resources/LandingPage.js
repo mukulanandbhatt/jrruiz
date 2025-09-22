@@ -1,7 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import Enterprise from './Enterprise'
-import Industries from './Industries'
 
 const LandingPage = () => {
   return (
@@ -65,8 +63,6 @@ const LandingPage = () => {
         </div>
       </div>
     </div>
-    <Enterprise />
-    <Industries />
     </>
   );
 };
