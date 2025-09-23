@@ -1,8 +1,8 @@
 import React from "react";
 
-const CTASection = () => {
+const CTA = () => {
   return (
-    <div className="relative mb-4 min-h-[70vh] sm:min-h-screen flex items-center justify-center bg-blue-600 font-[PP Nueue Montreal] p-2 sm:p-4 overflow-hidden">
+    <div className="relative min-h-[70vh] sm:min-h-screen flex items-center justify-center bg-blue-600 font-[PP Nueue Montreal] p-2 sm:p-4 overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-full">
         <img
           className="absolute top-[5%] left-0 w-16 sm:w-36 lg:w-48 opacity-75"
@@ -21,13 +21,11 @@ const CTASection = () => {
         </div>
       </div>
       <div className="z-10 text-white text-center p-4 sm:p-6 space-y-4 sm:space-y-6 max-w-4xl sm:max-w-7xl mx-auto">
-        <h1 className="text-xl sm:text-2xl md:text-4xl font-bold leading-tight">
-          Boost your productivity and relax. Get started with Clario.AI today.
-        </h1>
+        <h2 className="text-xl sm:text-2xl md:text-4xl font-semibold leading-tight">
+          Rethinking calls with Clario.ai
+        </h2>
         <p className="text-base sm:text-lg lg:text-2xl font-light max-w-4xl sm:max-w-7xl mx-auto">
-          Individuals, Companies using our Learned AI Document management
-          software get their work done faster than ever before. Ready to give
-          valuable time back to your team?
+          Try Clario.ai for yourself and experience how our AI phone assistant automates your calls and <br/> relieves your team – simply, efficiently, and around the clock.
         </p>
 
         <div className="flex flex-col sm:flex-row justify-center items-center gap-3 sm:gap-4 pt-2 sm:pt-4">
@@ -66,13 +64,9 @@ const CTASection = () => {
             </svg>
           </button>
         </div>
-
-        <p className="pt-2 sm:pt-4 text-xs sm:text-sm font-light opacity-80">
-          Efficient, easy & Safe
-        </p>
       </div>
     </div>
   );
 };
 
-export default CTASection;
+export default CTA;

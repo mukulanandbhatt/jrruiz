@@ -117,7 +117,7 @@ const Pricing = () => {
               </ul>
             </div>
             <button
-              className="mt-6 w-full h-12 text-black py-2 rounded-full hover:bg-blue-700 hover:text-white transition border-2 border-blue-600"
+              className="mt-6 w-full h-12 text-black py-2 rounded-full hover:bg-blue-700 hover:text-white transition border-2 border-blue-600 cursor-pointer"
             >
               {plan.button}
             </button>

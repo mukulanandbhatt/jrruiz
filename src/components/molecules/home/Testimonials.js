@@ -187,12 +187,13 @@ const Testimonials = () => {
         </div>
 
         <div className="flex justify-end mt-8 space-x-4">
-          <button onClick={handlePrev} disabled={currentIndex === 0}>
+          <button onClick={handlePrev} disabled={currentIndex === 0} className="cursor-pointer">
             <LeftArrow />
           </button>
           <button
             onClick={handleNext}
             disabled={currentIndex >= testimonials.length - 4}
+            className="cursor-pointer"
           >
             <RightArrow />
           </button>
