@@ -36,61 +36,26 @@ export default function Header() {
               Whats Clario.AI?
             </Link>
 
-            <div
-              className="relative"
-              onMouseEnter={() => setIsDropdownOpen(true)}
-              onMouseLeave={() => setIsDropdownOpen(false)}
+            
+            <Link
+              href="resources"
+              className={`relative flex items-center gap-1 hover:text-blue-500 ${
+                activeNav === "/resources" ? "text-blue-500" : ""
+              }`}
+              onClick={() => setActiveNav("/resources")}
             >
-              <button
-                className={`relative flex items-center gap-1 hover:text-blue-500 ${
-                  activeNav === "/usecases" ? "text-blue-500" : ""
-                }`}
-              >
-                Use Cases
-                <span
-                  className={`inline-block w-2 h-2 border-r-2 border-b-2 ${
-                    isDropdownOpen
-                      ? "rotate-225 border-blue-500"
-                      : "rotate-45 border-gray-700"
-                  } transition-transform duration-300`}
-                />
-              </button>
+              Resources
+            </Link>
 
-              {isDropdownOpen && (
-                <div className="absolute top-full left-0 mt-3 w-[800px] bg-white border border-gray-200 shadow-lg rounded-xl p-6 grid grid-cols-2">
-                  <div>
-                    <h3 className="font-semibold mb-6">USE CASES</h3>
-                    <ul className="space-y-6 text-sm text-gray-700 cursor-pointer">
-                      <li>AI answering machine</li>
-                      <li>AI Secretary</li>
-                      <li>AI support staff</li>
-                      <li>Appointments & FAQ</li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <h3 className="font-semibold mb-6">INDUSTRIES</h3>
-                    <ul className="grid grid-cols-3 gap-x-6 gap-y-4 text-sm text-gray-700 cursor-pointer">
-                      <li>Generally</li>
-                      <li>Contact Center</li>
-                      <li>Hotel</li>
-                      <li>Lawyers</li>
-                      <li>E-commerce</li>
-                      <li>IT system houses</li>
-                      <li>Car dealerships</li>
-                      <li>Retailers</li>
-                      <li>Recruitment</li>
-                      <li>Doctors</li>
-                      <li>Handyman</li>
-                      <li>Self-employed</li>
-                      <li>Beauty</li>
-                      <li>Property Management</li>
-                      <li>Tax advice</li>
-                    </ul>
-                  </div>
-                </div>
-              )}
-            </div>
+            <Link
+              href="blogs"
+              className={`relative flex items-center gap-1 hover:text-blue-500 ${
+                activeNav === "/blogs" ? "text-blue-500" : ""
+              }`}
+              onClick={() => setActiveNav("/blogs")}
+            >
+              Blogs
+            </Link>
 
             <Link
               href="#storytelling"
@@ -196,62 +161,31 @@ export default function Header() {
               What Clario.AI?
             </Link>
 
-            <div className="w-full">
-              <button
-                onClick={() => setIsMobileDropdownOpen(!isMobileDropdownOpen)}
-                className="w-full flex justify-center items-center gap-2 py-2 px-4 hover:bg-gray-100 rounded-lg"
-              >
-                <span
-                  className={`${
-                    activeNav === "/usecases" ? "text-blue-500" : ""
-                  }`}
-                >
-                  Use Cases
-                </span>
-                <span
-                  className={`inline-block w-2 h-2 border-r-2 border-b-2 ${
-                    isMobileDropdownOpen
-                      ? "rotate-225 border-blue-500"
-                      : "rotate-45 border-gray-700"
-                  } transition-transform duration-300`}
-                />
-              </button>
+            <Link
+              href="resources"
+              className={`w-full text-center py-2 hover:bg-gray-100 rounded-lg ${
+                activeNav === "/resources" ? "text-blue-500" : ""
+              }`}
+              onClick={() => {
+                setActiveNav("/resources");
+                setIsMenuOpen(false);
+              }}
+            >
+              Resources
+            </Link>
 
-              {isMobileDropdownOpen && (
-                <div className="mt-2 bg-gray-50 rounded-lg p-4 space-y-4">
-                  <div>
-                    <h3 className="font-semibold mb-2">USE CASES</h3>
-                    <ul className="space-y-1 text-sm text-gray-700">
-                      <li>AI answering machine</li>
-                      <li>AI Secretary</li>
-                      <li>AI support staff</li>
-                      <li>Appointments & FAQ</li>
-                    </ul>
-                  </div>
-
-                  <div>
-                    <h3 className="font-semibold mb-2">INDUSTRIES</h3>
-                    <ul className="grid grid-cols-3 gap-x-4 gap-y-2 text-sm text-gray-700">
-                      <li>Generally</li>
-                      <li>Contact Center</li>
-                      <li>Hotel</li>
-                      <li>Lawyers</li>
-                      <li>E-commerce</li>
-                      <li>IT system houses</li>
-                      <li>Car dealerships</li>
-                      <li>Retailers</li>
-                      <li>Recruitment</li>
-                      <li>Doctors</li>
-                      <li>Handyman</li>
-                      <li>Self-employed</li>
-                      <li>Beauty</li>
-                      <li>Property Management</li>
-                      <li>Tax advice</li>
-                    </ul>
-                  </div>
-                </div>
-              )}
-            </div>
+            <Link
+              href="blogs"
+              className={`w-full text-center py-2 hover:bg-gray-100 rounded-lg ${
+                activeNav === "/blogs" ? "text-blue-500" : ""
+              }`}
+              onClick={() => {
+                setActiveNav("/blogs");
+                setIsMenuOpen(false);
+              }}
+            >
+              Blogs
+            </Link>
 
             <Link
               href="#storytelling"

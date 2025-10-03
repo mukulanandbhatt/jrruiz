@@ -20,7 +20,6 @@ const FeatureCard = ({ title, description, illustration }) => {
         {illustration}
       </div>
     </motion.div>
-
   );
 };
 
@@ -40,45 +39,49 @@ const Features = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           <FeatureCard
-            title="AI Contract Summary"
-            description="Understand any legal document in 60 seconds, plain language."
+            title="Autofill, Sign & Send"
+            description="Close deals, approve forms, and finish paperwork in seconds.
+ Example: Fill in my company details and send this NDA for signature today."
             illustration={
               <img
                 src="/images/AI tools/03.jpg"
-                alt="AI Contract Summary"
+                alt="Autofill, Sign & Send"
                 className="w-full h-full object-cover rounded-lg"
               />
             }
           />
           <FeatureCard
-            title="Multilingual Translation"
-            description="Auto legal translations (EN, ES, DE, FR + more)."
+            title="AI Calendar"
+            description="Never miss a renewal, payment, or deadline — everything tracked automatically.
+ Example: “Remind me 30 days before my insurance renews.”"
             illustration={
               <img
                 src="/images/AI tools/06.jpg"
-                alt="Multilingual Translation"
+                alt="AI Calendar"
                 className="w-full h-full object-cover rounded-lg"
               />
             }
           />
           <FeatureCard
-            title="One-Click Actions"
-            description="Cancel, claim, send to lawyer — without leaving Clario."
+            title="Universal Uploads + OCR"
+            description="Scan, email, or sync from iOS, Android, Gmail, Google Drive, OneDrive, WhatsApp, Telegram… any format, any time.
+ Example: “Upload my travel insurance from Gmail and check if it covers medical emergencies.”"
             illustration={
               <img
                 src="/images/AI tools/05.jpg"
-                alt="One-Click Actions"
+                alt="Universal Uploads + OCR"
                 className="w-full h-full object-cover rounded-lg"
               />
             }
           />
           <FeatureCard
-            title="Smart Alerts"
-            description="Get notified of deadlines, renewals, or risks before it’s too late."
+            title="Smart Cloud Vault"
+            description="Store contracts, IDs, invoices, receipts, and business cards in one secure, organized hub.
+ Example: “Find all my 2024 invoices and group them by month for my accountant.”"
             illustration={
               <img
                 src="/images/AI tools/02.jpg"
-                alt="Smart Alerts"
+                alt="Smart Cloud Vault"
                 className="w-full h-full object-cover rounded-lg"
               />
             }
@@ -95,17 +98,17 @@ const Features = () => {
             }
           />
           <FeatureCard
-            title="Secure Data Vault"
-            description="Store contracts, invoices, and letters in AES-256 encrypted EU cloud."
+            title="One Life. One App."
+            description="For you, your family, and your business — everything in one intelligent space.
+ Example: “Add my daughter’s school agreement and my mom’s health insurance into my Clario family space.”"
             illustration={
               <img
                 src="/images/AI tools/01.jpg"
-                alt="Secure Data Vault"
+                alt="One Life. One App."
                 className="w-full h-full object-cover rounded-lg"
               />
             }
           />
-                    
         </div>
       </div>
     </section>

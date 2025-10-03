@@ -4,6 +4,7 @@ import Image from "next/image";
 const BlogArticle = () => {
   return (
     <>
+    <div id='blogs' class="scroll-mt-20"></div>
     <div className="min-h-screen bg-blue-500 text-white">
       <div className="relative flex flex-col items-center text-center px-4 py-16 md:py-24 lg:py-32 overflow-hidden">
         <div className="absolute top-80 right-50 hidden md:block">

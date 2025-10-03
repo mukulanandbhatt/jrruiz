@@ -4,7 +4,7 @@ import React from "react";
 const TrustSection = () => {
   const images = [
     {
-      src: "/images/Building Trust/Rectangle 161124544.png",
+      src: "/images/Building Trust/Frame 2121454049.svg",
       alt: "AICPA SOC logo",
     },
     {
@@ -28,7 +28,7 @@ const TrustSection = () => {
       alt: "Cybersecurity Maturity Model Compliant logo",
     },
     {
-      src: "/images/Building Trust/Rectangle 161124547.png",
+      src: "/images/Building Trust/6696bdd9b8cadb78a732cfa8_HIPAA (1) 1.svg",
       alt: "HIPAA Compliant logo",
     },
     {
@@ -36,19 +36,19 @@ const TrustSection = () => {
       alt: "ISO 27001 Certified logo",
     },
     {
-      src: "/images/Building Trust/208597c8b7c122c36d67c4a5db0847c3bfb3e6c9.png",
+      src: "/images/Building Trust/6696be8992e0cc2fd5889026_iso42001 4.svg",
       alt: "HI TRUST logo",
     },
     {
-      src: "/images/Building Trust/a9c83c09bb622da318b00af25a889fac754ede5f.png",
+      src: "/images/Building Trust/6696be8992e0cc2fd5889026_iso42001 3.svg",
       alt: "USDP logo",
     },
     {
-      src: "/images/Building Trust/cdeb533296ad4ee002a1e16bfc28e5f6cddb357a.png",
+      src: "/images/Building Trust/6696be8992e0cc2fd5889026_iso42001 2.svg",
       alt: "NST logo",
     },
     {
-      src: "/images/Building Trust/9c1b697114933d21a9feba0383ffedd627f14445.png",
+      src: "/images/Building Trust/6696be8992e0cc2fd5889026_iso42001 1.svg",
       alt: "ISO 42001 logo",
     },
   ];

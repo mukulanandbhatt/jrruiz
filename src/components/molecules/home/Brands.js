@@ -1,153 +1,137 @@
 "use client"
-import React, { useEffect, useState } from "react";
+import React from "react";
 
-const CommandPlusRLogo = () => (
+const TelegramLogo = () => (
   <img
-    width="45"
-    height="50"
+    width="70"
+    height="70"
     viewBox="0 0 48 52"
     fill="none"
-    src="/images/HomePage/Logomark.png"
+    src="/images/HomePage/Telegram_2019_Logo.svg.png"
     alt='Logo'
   >
   </img>
 );
 
-const GlobalBankLogo = () => (
+const GoogleLogo = () => (
   <img
-    width="24"
-    height="24"
+    width="70"
+    height="70"
     viewBox="0 0 24 24"
     fill="none"
-    src="/images/HomePage/Logomark1.png"
+    src="/images/HomePage/Google__G__logo.svg.webp"
     alt='logo'
   >
   </img>
 );
 
-const SpheruleLogo = () => (
+const WhatsAppLogo = () => (
   <img
-    width="45"
-    height="50"
+    width="70"
+    height="70"
     viewBox="0 0 48 52"
     fill="none"
-    src="/images/HomePage/Logomark2.png"
+    src="/images/HomePage/f71ffb7ad7db43ccc7b1466de418f254.jpg"
     alt='Logo'
   >
   </img>
 );
 
-const LayersLogo = () => (
+const NetFlixLogo = () => (
   <img
-    width="45"
-    height="50"
+    width="70"
+    height="70"
     viewBox="0 0 48 52"
     fill="none"
-    src="/images/HomePage/Logomark3.png"
+    src="/images/HomePage/netflix-mobile-application-logo-free-png.webp"
     alt='Logo'
   >
   </img>
 );
 
-const AltPlusShiftLogo = () => (
+const AmazonLogo = () => (
   <img
-    width="45"
-    height="50"
+    width="70"
+    height="70"
     viewBox="0 0 48 52"
     fill="none"
-    src="/images/HomePage/Logomark4.png"
+    src="/images/HomePage/Amazon_icon.png"
     alt='Logo'
   >
   </img>
 );
 
-const LuminousLogo = () => (
+const FlipkartLogo = () => (
   <img
-    width="45"
-    height="50"
+    width="70"
+    height="70"
     viewBox="0 0 48 52"
     fill="none"
-    src="/images/HomePage/Logomark5.png"
+    src="/images/HomePage/png-transparent-flipkart-logo.png"
     alt='Logo'
+    background='none'
   >
   </img>
 );
 
 const Brands = () => {
-  const [animate, setAnimate] = useState(false);
-
-  useEffect(() => {
-    setAnimate(true);
-  }, []);
-
   const logos = [
-    { name: "Command+R", Component: CommandPlusRLogo },
-    { name: "GlobalBank", Component: GlobalBankLogo },
-    { name: "Spherule", Component: SpheruleLogo },
-    { name: "Layers", Component: LayersLogo },
-    { name: "Alt+Shift", Component: AltPlusShiftLogo },
-    { name: "Luminous", Component: LuminousLogo },
+    { name: "Telegram", Component: TelegramLogo },
+    { name: "Google", Component: GoogleLogo },
+    { name: "WhatsApp", Component: WhatsAppLogo },
+    { name: "Netflix", Component: NetFlixLogo },
+    { name: "Amazon", Component: AmazonLogo },
+    { name: "Flipkart", Component: FlipkartLogo },
   ];
+
+  const logoCount = logos.length;
 
   return (
     <>
-    <div
-      style={{
-        overflowX: "hidden",
-        width: "100%",
-        maxWidth: "100%",
-        backgroundColor: "#2563eb",
-        borderRadius: "1rem",
-        padding: '1rem 1rem',
-        margin: '0 0',
-        boxSizing: 'border-box',
-      }}
-    >
-      <style>
-        {`
-          @keyframes slide {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
+      <style global jsx>{`
+        @keyframes slide {
+          from {
+            transform: translateX(0);
           }
-          .slider-track {
-            display: flex;
-            width: max-content;
-            animation: slide 20s linear infinite;
-            white-space: nowrap;
+          to {
+            transform: translateX(-50%); 
           }
-          .logo-item {
-            display: flex;
-            align-items: center;
-            margin-right: 2rem;
-            color: white;
-            font-weight: bold;
-            font-size: 1.25rem;
-            white-space: nowrap;
-          }
-          @media (max-width: 640px) {
-            .logo-item {
-              font-size: 1rem;
-              margin-right: 1rem;
-              min-width: 90px;
-            }
-          }
-        `}
-      </style>
-      <div className="slider-track" aria-label="Scrolling brands logos">
-        {[...logos, ...logos].map((logo, index) => (
-          <div key={index} className="logo-item">
-            <logo.Component />
-            <span className="hidden sm:inline" style={{ marginLeft: "0.5rem" }}>
-              {logo.name}
-            </span>
-          </div>
-        ))}
+        }
+        
+        .animate-slide-loop {
+          animation: slide 30s linear infinite; 
+        }
+        
+        .group:hover .animate-slide-loop {
+          animation-play-state: paused;
+        }
+      `}</style>
+
+      <div className="overflow-hidden w-full mx-auto py-4 group bg-[#2563eb]">
+        
+        <div 
+          className="flex animate-slide-loop"
+          style={{ 
+            width: "200%"
+          }} 
+          aria-label="Scrolling brands logos"
+        >
+          {[...logos, ...logos].map((logo, index) => (
+            <div 
+              key={index} 
+              className="flex items-center justify-center px-6 md:px-8 flex-shrink-0"
+              style={{ minWidth: `${100 / logoCount}%` }} 
+            >
+              <logo.Component />
+              <span className="hidden sm:inline text-xl font-semibold ml-2 text-gray-800">
+                {logo.name}
+              </span>
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
     </>
   );
 };
 
-
 export default Brands;
-

@@ -33,6 +33,7 @@ export default function HomePage() {
               backgroundSize: "cover",
               backgroundPosition: "center",
               backgroundRepeat: "no-repeat",
+              backgroundBlendMode: "lighten",
             }}
           >
             <div className="mb-6 mt-10">
@@ -145,15 +146,15 @@ export default function HomePage() {
             <div className="mt-7 flex flex-wrap justify-center gap-4">
               <span className="flex items-center gap-2 px-6 py-3 bg-[#1C1C1E] rounded-full text-sm md:text-base text-gray-200">
                 <img src="/images/HomePage/Right tick.png" alt="Right tick" />
-                Automatic summary Ai, <br /> tranlations Ai, riks indicator
+                AI Summaries & Translations
               </span>
               <span className="flex items-center gap-2 px-6 py-3 bg-[#1C1C1E] rounded-full text-sm md:text-base text-gray-200">
                 <img src="/images/HomePage/Right tick.png" alt="Right tick" />
-                Meet LExi.Ai our Legal Chatbot
+                Lexi.AI Chatbox
               </span>
               <span className="flex items-center gap-2 px-6 py-3 bg-[#1C1C1E] rounded-full text-sm md:text-base text-gray-200">
                 <img src="/images/HomePage/Right tick.png" alt="Right tick" />
-                Autofill, sign and Send documents
+                Risk Scoring & Guidance
               </span>
             </div>
           </div>
@@ -193,7 +194,7 @@ export default function HomePage() {
               className="bg-none"
             />
           </div>
-          <div className="absolute bottom-80 right-70 hidden md:block">
+          <div className="absolute bottom-80 right-80 hidden md:block">
             <Image
               src="/images/HomePage/Vector.png"
               alt="vector decoration"
@@ -217,7 +218,7 @@ export default function HomePage() {
               height={400}
             />
           </div>
-          <div className="absolute top-40 left-50 hidden md:block">
+          <div className="absolute top-45 left-75 hidden md:block">
             <Image
               src="/images/HomePage/Property 2=Group.png"
               alt="Message decoration"
@@ -233,7 +234,7 @@ export default function HomePage() {
               height={150}
             />
           </div>
-          <div className="absolute top-95 left-40 hidden md:block">
+          <div className="absolute top-100 left-40 hidden md:block">
             <Image
               src="/images/HomePage/Group 1597883996.svg"
               alt="invoices decoration"
@@ -241,7 +242,7 @@ export default function HomePage() {
               height={200}
             />
           </div>
-          <div className="absolute bottom-60 left-60 hidden md:block">
+          <div className="absolute bottom-70 left-85 hidden md:block">
             <Image
               src="/images/HomePage/Property 3=Group.png"
               alt="decoration"
