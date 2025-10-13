@@ -12,7 +12,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="absolute top-5 left-1/2 -translate-x-1/2 z-50 w-11/12 max-w-[1296px] px-4 md:px-8">
+      <header className="absolute top-8 left-1/2 -translate-x-1/2 z-50 w-11/12 max-w-[1296px] px-4 md:px-8">
         <div className="flex items-center justify-between bg-white backdrop-blur-md border border-gray-200 shadow-md px-4 py-4 rounded-full">
           <Link href="/" onClick={() => setActiveNav("/")}>
             <Image

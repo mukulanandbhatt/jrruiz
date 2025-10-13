@@ -5,14 +5,15 @@ const BlogArticle = () => {
   return (
     <>
       {/* <div id="blogs" className=""></div> */}
-      <div className="min-h-screen bg-blue-500 text-white">
-        <div className="relative flex flex-col items-center text-center px-4 py-16 md:py-24 lg:py-32 overflow-hidden">
-          <div className="absolute top-80 right-50 hidden md:block">
+      <div className="h-[70dvh] bg-blue-500 text-white rounded-xl mx-3 my-3">
+        <div className="relative h-full flex flex-col items-center text-center px-4 py-16 md:py-24 lg:py-32 overflow-hidden">
+          <div className="absolute top-80 right-50 hidden md:block z-20">
             <Image
               src="/images/HomePage/Computer Vision.png"
               alt="computer vision decoration"
               width={175}
               height={260}
+              className=""
             />
           </div>
           <div className="absolute top-80 left-40 hidden md:block">
@@ -42,15 +43,15 @@ const BlogArticle = () => {
             />
           </div>
           <img
-            className="absolute left-1/3 transform w-[300px] sm:w-[700px] lg:w-[900px] h-auto"
+            className="absolute  transform w-[300px] right-0 sm:w-[700px] lg:w-[50vw]  h-auto z-10"
             src="/images/ResourcesPage/Vector 7.svg"
             alt="Decorative Wave"
           />
 
-          <div className="z-10 mt-30">
-            <h1 className="text-2xl md:text-5xl sm:text-3xl lg:text-6xl font-bold max-w-4xl leading-tight">
+          <div className="z-20 mt-20">
+            <h6 className="text-2xl md:text-5xl sm:text-3xl lg:text-6xl font-bold max-w-4xl leading-tight">
               Blog article
-            </h1>
+            </h6>
             <p className="mt-6 max-w-2xl text-lg md:text-xl text-center text-white mx-auto">
               In our blog section you will find inspiration, insights and
               current <br /> topics related to telephone AI & communication.
