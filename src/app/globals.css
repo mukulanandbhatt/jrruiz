@@ -1,2 +1,11 @@
 @import "tailwindcss";
 
+* {
+  @apply border-neutral-200;
+}
+
+@theme {
+  --color-text-primary: #404040;
+  --color-text-secondary: #525252;
+  --color-theme: #2b7fff;
+}
