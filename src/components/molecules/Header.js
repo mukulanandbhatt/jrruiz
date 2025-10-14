@@ -4,12 +4,15 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import { FcAbout } from "react-icons/fc";
+import { Briefcase, Newspaper } from "lucide-react";
 
 export default function Header() {
   // const [activeNav, setActiveNav] = useState("/");
   // const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   // const [isMobileDropdownOpen, setIsMobileDropdownOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [showDropdown, setShowDropdown] = useState(false);
 
   // function handleScroll(id) {
   //   document
@@ -28,7 +31,7 @@ export default function Header() {
       link: "/who-is-it-for",
       isActive: pathName.endsWith("/who-is-it-for"),
     },
-    { title: "Blogs", link: "/blogs", isActive: pathName.endsWith("/blogs") },
+    // { title: "Blogs", link: "/blogs", isActive: pathName.endsWith("/blogs") },
     {
       title: "Storytelling/Use Case",
       link: "/#storytelling",
@@ -76,6 +79,40 @@ export default function Header() {
                 {navlink?.title}
               </Link>
             ))}
+            <div className="relative group  inline-block">
+              {/* Trigger */}
+              <div className="cursor-pointer  flex items-center gap-1 hover:text-blue-500">
+                About Clario
+              </div>
+
+              {/* Dropdown */}
+              <div className="absolute group left-0 hidden group-hover:flex flex-col z-10">
+                <div className="bg-slate-50 px-5 py-3 mt-3 rounded-md  shadow-md  w-36 flex flex-col gap-2">
+                  <Link
+                    className="hover:text-blue-500 flex gap-2 items-center"
+                    href="#"
+                  >
+                    <FcAbout size={16} />
+                    About us
+                  </Link>
+                  <Link
+                    className="hover:text-blue-500 flex gap-2 items-center"
+                    href="#"
+                  >
+                    <Briefcase size={16} />
+                    Jobs
+                  </Link>
+                  <Link
+                    className="hover:text-blue-500 flex gap-2 items-center"
+                    href="/blogs"
+                  >
+                    <Newspaper size={16} />
+                    Blogs
+                  </Link>
+                </div>
+              </div>
+            </div>
+
             {/* <Link
               href="/"
               className={`relative flex items-center gap-1 hover:text-blue-500 ${

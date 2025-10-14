@@ -26,7 +26,7 @@ const GoogleLogo = () => (
 );
 
 const WhatsAppLogo = () => (
-  <Image src={"/whatsapp.svg"} height={60} width={60} />
+  <Image src={"/whatsapp.svg"} height={60} width={60} alt="Whatsapp" />
 );
 
 const NetFlixLogo = () => (
