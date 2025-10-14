@@ -41,7 +41,9 @@ export default function BlogDetailPage() {
       {/* MAIN BLOG */}
       <section className="max-w-[1200px] mx-auto w-full flex-col md:flex-row flex gap-x-10 py-10 sm:px-8 px-5">
         <div className="border-l-2 pl-3 md:w-1/3 h-fit py-2">
-          <h6 className="text-lg font-medium">In this article, you'll read:</h6>
+          <h6 className="text-lg font-medium">
+            In this article, you&#39;ll read:
+          </h6>
           {/* SUB HEADING */}
           <h6 className="text-text-secondary text-lg  font-medium mt-3">
             Wichtige Information zur neuen Bankregelung zum IBAN-Abgleich
@@ -77,7 +79,7 @@ export default function BlogDetailPage() {
           </h6>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-5 mt-10">
             {articles?.slice(0, 3).map((blog) => (
-              <Blog blogData={blog} />
+              <Blog blogData={blog} key={blog?.title} />
             ))}
           </div>
         </div>
