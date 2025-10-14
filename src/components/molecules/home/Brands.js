@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import React from "react";
 import Marquee from "react-fast-marquee";
 
@@ -25,14 +26,7 @@ const GoogleLogo = () => (
 );
 
 const WhatsAppLogo = () => (
-  <img
-    width="70"
-    height="70"
-    viewBox="0 0 48 52"
-    fill="none"
-    src="/images/HomePage/f71ffb7ad7db43ccc7b1466de418f254.jpg"
-    alt="Logo"
-  ></img>
+  <Image src={"/whatsapp.svg"} height={60} width={60} />
 );
 
 const NetFlixLogo = () => (

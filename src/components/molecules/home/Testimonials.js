@@ -27,7 +27,7 @@ const RightArrow = () => (
 
 const TestimonialCard = ({ testimonial }) => {
   return (
-    <div className="flex-none w-80 lg:w-[22rem] p-6 bg-white rounded-xl shadow-lg border border-gray-100 flex flex-col justify-between">
+    <div className="flex-none w-80 lg:w-[21rem] px-6 py-10 backdrop-blur-3xl  bg-slate-300/10 rounded-xl border border-gray-100 flex flex-col justify-between">
       <div>
         <div className="flex mb-4 gap-1">
           {[...Array(testimonial.rating)].map((_, i) => (
@@ -147,59 +147,63 @@ const Testimonials = () => {
 
   return (
     <>
-    
-    <section className="bg-gray-50 py-20 relative overflow-hidden">
-      <div
-        className="absolute z-0 w-[500px] h-[250px] top-[300px] right-[200px]  bg-cover bg-center"
-        style={{
-          backgroundImage: "url('/images/Testimonials/Vector.svg')",
-          opacity: 0.7,
-        }}
-      />
-      <div
-        className="absolute z-0 w-[500px] h-[250px] top-[50px] right-[200px] bg-cover bg-center"
-        style={{
-          backgroundImage: "url('/images/Testimonials/Vector1.svg')",
-          opacity: 0.7,
-        }}
-      />
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-800">
-            Customer testimonials
-          </h2>
-          <p className="mt-2 text-2xl sm:text-2xl md:text-4xl font-light text-gray-600">
-            Hear what our users have to say about Clario.AI
-          </p>
-        </div>
-
-        <div className="relative">
-          <div
-            className="flex space-x-8 transition-transform duration-500 ease-in-out"
-            style={{ transform: transformValue }}
-          >
-            {testimonials.map((testimonial, index) => (
-              <TestimonialCard key={index} testimonial={testimonial} />
-            ))}
+      <section className=" bg-slate-50 relative overflow-hidden mx-5 rounded-3xl">
+        <div className="z-0 h-full border-2 absolute right-0  w-1/2 bg-gradient-to-b from-10% mask-l-from-20% from-blue-300 to-purple-400 mask-t-from-70% mask-b-from-50%" />
+        {/* <div
+          className="absolute z-0 w-[500px] h-[250px] top-[300px] right-[200px]  bg-cover bg-center"
+          style={{
+            // backgroundImage: "url('/images/Testimonials/Vector.svg')",
+            opacity: 0.7,
+          }}
+        /> */}
+        {/* <div
+          className="absolute z-0 w-[500px] h-[250px] top-[50px] right-[200px] bg-cover bg-center"
+          style={{
+            // backgroundImage: "url('/images/Testimonials/Vector1.svg')",
+            opacity: 0.7,
+          }}
+        /> */}
+        <div className="max-w-7xl pt-20 pb-10 mx-auto px-4 sm:px-6 lg:px-8 z-30">
+          <div className="text-center mb-16  z-20">
+            <h2 className="text-4xl font-bold text-gray-800  z-30">
+              Customer testimonials
+            </h2>
+            <p className="mt-2 text-2xl sm:text-2xl md:text-4xl font-light  z-20 text-gray-600">
+              Hear what our users have to say about Clario.AI
+            </p>
           </div>
 
-          <div className="absolute top-0 right-0 w-80 h-full pointer-events-none bg-gradient-to-r from-transparent to-gray-50" />
-        </div>
+          <div className="relative">
+            <div
+              className="flex space-x-8 transition-transform duration-500 ease-in-out"
+              style={{ transform: transformValue }}
+            >
+              {testimonials.map((testimonial, index) => (
+                <TestimonialCard key={index} testimonial={testimonial} />
+              ))}
+            </div>
 
-        <div className="flex justify-end mt-8 space-x-4">
-          <button onClick={handlePrev} disabled={currentIndex === 0} className="cursor-pointer">
-            <LeftArrow />
-          </button>
-          <button
-            onClick={handleNext}
-            disabled={currentIndex >= testimonials.length - 4}
-            className="cursor-pointer"
-          >
-            <RightArrow />
-          </button>
+            {/* <div className="absolute top-0 right-0 w-80 h-full pointer-events-none bg-gradient-to-r from-transparent to-gray-50" /> */}
+          </div>
+
+          <div className="flex justify-end mt-8 space-x-2 z-30 ">
+            <button
+              onClick={handlePrev}
+              disabled={currentIndex === 0}
+              className="cursor-pointer"
+            >
+              <LeftArrow />
+            </button>
+            <button
+              onClick={handleNext}
+              disabled={currentIndex >= testimonials.length - 4}
+              className="cursor-pointer"
+            >
+              <RightArrow />
+            </button>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
     </>
   );
 };

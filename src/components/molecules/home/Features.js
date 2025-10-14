@@ -7,8 +7,8 @@ const FeatureCard = ({ title, description, illustration }) => {
   return (
     <motion.div
       whileHover={{ rotateY: 180 }}
-      transition={{ duration: 0.8 }}
-      className="relative w-full h-64 sm:h-72 [transform-style:preserve-3d] cursor-pointer"
+      transition={{ duration: 0.5 }}
+      className="relative w-full h-64 sm:h-72 [transform-style:preserve-3d] cursor-pointer "
     >
       <div className="absolute inset-0 bg-white rounded-xl shadow-lg p-6 border border-gray-100 flex flex-col items-center justify-center text-center [backface-visibility:hidden]">
         <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-3">
@@ -25,8 +25,8 @@ const FeatureCard = ({ title, description, illustration }) => {
 
 const Features = () => {
   return (
-    <section className="py-16 bg-gradient-to-r from-blue-50 to-indigo-50">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-16 bg-gradient-to-r from-blue-50 to-indigo-50 ">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-[1200px]">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-2xl md:text-3xl lg:text-3xl font-bold text-gray-800 mb-2">
             Everything you need. <br /> All in one place.
