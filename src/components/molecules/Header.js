@@ -33,11 +33,11 @@ export default function Header() {
     },
     // { title: "Blogs", link: "/blogs", isActive: pathName.endsWith("/blogs") },
     {
-      title: "Storytelling/Use Case",
-      link: "/#storytelling",
+      title: "Use Case",
+      link: "/#use-case",
       scroll: false,
-      // isActive: window.location.hash === "#storytelling",
-      // onClick: () => handleScroll("storytelling"),
+      // isActive: window.location.hash === "#use-case",
+      // onClick: () => handleScroll("use-case"),
     },
     {
       title: "Pricing",
@@ -55,14 +55,14 @@ export default function Header() {
   ];
   return (
     <>
-      <header className="absolute top-8 left-1/2 -translate-x-1/2 z-50 w-11/12 max-w-[1296px] px-4 md:px-8">
+      <header className="fixed  top-8 left-1/2 -translate-x-1/2  z-50 w-full max-w-[1296px] px-5">
         <div className="flex items-center justify-between bg-white backdrop-blur-md border border-gray-200 shadow-md px-4 py-4 rounded-full">
           <Link href="/">
             <Image
               src="/images/Frame 5.png"
               alt="Clario.ai Logo"
-              width={120}
-              height={40}
+              width={100}
+              height={100}
               priority
             />
           </Link>
@@ -147,11 +147,11 @@ export default function Header() {
               scroll={false}
               href="/"
               className={`relative flex items-center gap-1 hover:text-blue-500 ${
-                activeNav === "/storytelling" ? "text-blue-500" : ""
+                activeNav === "/use-case" ? "text-blue-500" : ""
               }`}
-              onClick={() => handleScroll("storytelling")}
+              onClick={() => handleScroll("use-case")}
             >
-              Storytelling/case use
+              use-case/case use
             </Link>
 
             <Link
@@ -159,7 +159,7 @@ export default function Header() {
               className={`relative flex items-center gap-1 hover:text-blue-500 ${
                 activeNav === "/pricing" ? "text-blue-500" : ""
               }`}
-              onClick={() => handleScroll("storytelling")}
+              onClick={() => handleScroll("use-case")}
             >
               Pricing
             </Link>
@@ -287,12 +287,12 @@ export default function Header() {
             </Link>
 
             <Link
-              href="#storytelling"
+              href="#use-case"
               className={`w-full text-center py-2 hover:bg-gray-100 rounded-lg ${
-                activeNav === "/storytelling" ? "text-blue-500" : ""
+                activeNav === "/use-case" ? "text-blue-500" : ""
               }`}
               onClick={() => {
-                setActiveNav("/storytelling");
+                setActiveNav("/use-case");
                 setIsMenuOpen(false);
               }}
             >
