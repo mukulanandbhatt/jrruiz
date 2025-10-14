@@ -20,6 +20,7 @@ import FAQ from "../../atoms/FAQ";
 import { Cover } from "../Button/Cover";
 
 export default function HomePage() {
+ 
   return (
     <>
       <main className="bg-[#0B002E] min-h-screen text-white">

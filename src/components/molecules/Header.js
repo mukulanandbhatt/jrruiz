@@ -3,18 +3,58 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 export default function Header() {
-  const [activeNav, setActiveNav] = useState("/");
+  // const [activeNav, setActiveNav] = useState("/");
+  // const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  // const [isMobileDropdownOpen, setIsMobileDropdownOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [isMobileDropdownOpen, setIsMobileDropdownOpen] = useState(false);
 
+  // function handleScroll(id) {
+  //   document
+  //     .getElementById(id)
+  //     .scrollIntoView({ behavior: "smooth", block: "end" });
+  // }
+  const pathName = usePathname();
+  const navLinks = [
+    {
+      title: "Whats Clario?",
+      link: "/",
+      isActive: pathName === "/",
+    },
+    {
+      title: "Who is It for?",
+      link: "/who-is-it-for",
+      isActive: pathName.endsWith("/who-is-it-for"),
+    },
+    { title: "Blogs", link: "/blogs", isActive: pathName.endsWith("/blogs") },
+    {
+      title: "Storytelling/Use Case",
+      link: "/#storytelling",
+      scroll: false,
+      // isActive: window.location.hash === "#storytelling",
+      // onClick: () => handleScroll("storytelling"),
+    },
+    {
+      title: "Pricing",
+      link: "/#pricing",
+      scroll: false,
+      // isActive: window.location.hash === "#pricing",
+      // onClick: () => handleScroll("pricing"),
+    },
+    {
+      title: "FAQ",
+      link: "/#faq",
+      // isActive: window.location.hash === "#faq",
+      // onClick: () => handleScroll("faq"),
+    },
+  ];
   return (
     <>
       <header className="absolute top-8 left-1/2 -translate-x-1/2 z-50 w-11/12 max-w-[1296px] px-4 md:px-8">
         <div className="flex items-center justify-between bg-white backdrop-blur-md border border-gray-200 shadow-md px-4 py-4 rounded-full">
-          <Link href="/" onClick={() => setActiveNav("/")}>
+          <Link href="/">
             <Image
               src="/images/Frame 5.png"
               alt="Clario.ai Logo"
@@ -25,8 +65,19 @@ export default function Header() {
           </Link>
 
           <nav className="hidden lg:flex items-center space-x-8 font-medium text-gray-700 relative">
-            <Link
-              href="#"
+            {navLinks.map((navlink) => (
+              <Link
+                key={navlink.title}
+                href={navlink?.link}
+                className={`relative flex items-center gap-1 hover:text-blue-500 ${
+                  navlink.isActive ? "text-blue-500" : ""
+                }`}
+              >
+                {navlink?.title}
+              </Link>
+            ))}
+            {/* <Link
+              href="/"
               className={`relative flex items-center gap-1 hover:text-blue-500 ${
                 activeNav === "/clario.ai" ? "text-blue-500" : ""
               }`}
@@ -56,21 +107,22 @@ export default function Header() {
             </Link>
 
             <Link
-              href="#storytelling"
+              scroll={false}
+              href="/"
               className={`relative flex items-center gap-1 hover:text-blue-500 ${
                 activeNav === "/storytelling" ? "text-blue-500" : ""
               }`}
-              onClick={() => setActiveNav("/stortelling")}
+              onClick={() => handleScroll("storytelling")}
             >
               Storytelling/case use
             </Link>
 
             <Link
-              href="#pricing"
+              href="/"
               className={`relative flex items-center gap-1 hover:text-blue-500 ${
                 activeNav === "/pricing" ? "text-blue-500" : ""
               }`}
-              onClick={() => setActiveNav("/pricing")}
+              onClick={() => handleScroll("storytelling")}
             >
               Pricing
             </Link>
@@ -83,7 +135,7 @@ export default function Header() {
               onClick={() => setActiveNav("/faq")}
             >
               FAQ
-            </Link>
+            </Link> */}
           </nav>
 
           <div className="hidden lg:flex items-center space-x-3">
@@ -144,9 +196,21 @@ export default function Header() {
       </header>
 
       {isMenuOpen && (
-        <div className="lg:hidden fixed top-[90px] left-1/2 -translate-x-1/2 z-40 w-11/12 max-w-[1296px] bg-white/90 backdrop-blur-md border-t border-gray-200 shadow-lg py-4 rounded-b-lg">
+        <div className="px-3 lg:hidden fixed top-[120px] left-1/2 -translate-x-1/2 z-40 w-11/12 max-w-[1296px] bg-white/90 backdrop-blur-md border-t border-gray-200 shadow-lg py-4 rounded-b-lg">
           <nav className="flex flex-col items-center space-y-4 font-medium text-gray-700 ">
-            <Link
+            {navLinks.map((navlink) => (
+              <Link
+                key={navlink.title}
+                onClick={() => setIsMenuOpen(false)}
+                href={navlink?.link}
+                className={`relative flex items-center gap-1 hover:text-blue-500 ${
+                  navlink.isActive ? "text-blue-500" : ""
+                }`}
+              >
+                {navlink?.title}
+              </Link>
+            ))}
+            {/* <Link
               href="#"
               className={`w-full text-center py-2 hover:bg-gray-100 rounded-lg ${
                 activeNav === "/clario.ai" ? "text-blue-500" : ""
@@ -222,7 +286,7 @@ export default function Header() {
               }}
             >
               FAQ
-            </Link>
+            </Link> */}
 
             <div className="flex flex-col space-y-2 w-full mt-4">
               <Link
