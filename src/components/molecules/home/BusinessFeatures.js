@@ -2,15 +2,15 @@ import React from "react";
 
 const BusinessFeatures = () => {
   return (
-    <div className="bg-white py-16 px-4 sm:px-6 lg:px-8">
+    <div className=" py-16 px-4 sm:px-6 lg:px-8 bg-slate-50 rounded-3xl mx-5">
       <div className="max-w-7xl mx-auto text-center animate-fadeInUp">
         <h2 className="text-2xl sm:text-2xl md:text-4xl font-bold tracking-tight">
           Made in Europe, Designed for the World
         </h2>
         <p className="mt-4 max-w-2xl mx-auto text-lg">
-          When it comes to doing business, location plays an important role.
-          Our contract management software has been tailored specifically for
-          the requirements of European businesses.
+          When it comes to doing business, location plays an important role. Our
+          contract management software has been tailored specifically for the
+          requirements of European businesses.
         </p>
       </div>
 

@@ -1,0 +1,66 @@
+import React from "react";
+import Image from "next/image";
+
+const BlogArticle = () => {
+  return (
+    <>
+      {/* <div id="blogs" className=""></div> */}
+      <div className="h-[50dvh] md:h-[70dvh] bg-blue-500 text-white sm:rounded-2xl md:rounded-3xl sm:mx-3 sm:my-3">
+        <div className="relative h-full flex flex-col items-center text-center px-4 py-16 md:py-24 lg:py-32 overflow-hidden">
+          <div className="absolute top-80 right-50 hidden md:block  z-20">
+            <Image
+              src="/images/HomePage/Computer Vision.png"
+              alt="computer vision decoration"
+              width={175}
+              height={260}
+              className=""
+            />
+          </div>
+          <div className="absolute top-80 left-40 hidden md:block">
+            <Image
+              src="/images/HomePage/Data Science.png"
+              alt="data science decoration"
+              width={175}
+              height={260}
+            />
+          </div>
+          <div className="absolute top-60 right-5 ">
+            <Image
+              src="/images/HomePage/Star.png"
+              alt="star decoration"
+              width={70}
+              height={70}
+            />
+          </div>
+
+          <div className="absolute bottom-0 left-40 ">
+            <Image
+              src="/images/ResourcesPage/Frame 2121453665.svg"
+              alt="wave decoration"
+              width={300}
+              height={500}
+              // opacity={75}
+            />
+          </div>
+          <img
+            className="absolute  transform w-[300px] right-0 sm:w-[700px] lg:w-[50vw]  h-auto z-10"
+            src="/images/ResourcesPage/Vector 7.svg"
+            alt="Decorative Wave"
+          />
+
+          <div className="z-20 mt-20">
+            <h6 className="text-2xl md:text-5xl sm:text-3xl lg:text-6xl font-bold max-w-4xl leading-tight">
+              Blog article
+            </h6>
+            <p className="mt-6 max-w-2xl text-lg md:text-xl text-center text-white mx-auto">
+              In our blog section you will find inspiration, insights and
+              current <br /> topics related to telephone AI & communication.
+            </p>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default BlogArticle;

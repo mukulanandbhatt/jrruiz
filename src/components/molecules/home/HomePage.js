@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { FaArrowRight } from "react-icons/fa";
 import { Star } from "lucide-react";
-import globe from "../../../../public/globe.svg";
 import WhyUs from "./WhyUs";
 import Brands from "./Brands";
 import Features from "./Features";
@@ -25,7 +24,7 @@ export default function HomePage() {
     <>
       <main className="bg-[#0B002E] min-h-screen text-white">
         {/* Hero Section */}
-        <section className="relative overflow-hidden mt-20">
+        <section className="relative overflow-hidden ">
           <div
             className="container mx-auto px-6 lg:px-16 flex flex-col items-center text-center pt-20 pb-32"
             style={{
@@ -36,7 +35,7 @@ export default function HomePage() {
               backgroundBlendMode: "lighten",
             }}
           >
-            <div className="mb-6 mt-10">
+            <div className="mb-6 mt-20">
               <div className="bg-[#1E1E2F] rounded-full px-4 py-2 flex items-center justify-between shadow-md gap-4 w-fit">
                 <div className="w-10 h-10 flex items-center justify-center">
                   <img

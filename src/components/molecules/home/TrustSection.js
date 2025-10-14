@@ -55,7 +55,7 @@ const TrustSection = () => {
 
   return (
     <>
-      <div className="bg-white py-12">
+      <div className="bg-white py-12 ">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold">Building Trust</h2>
           <p className="mt-2 text-lg text-gray-600">
