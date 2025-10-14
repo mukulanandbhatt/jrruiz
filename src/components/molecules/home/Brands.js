@@ -1,5 +1,6 @@
-"use client"
+"use client";
 import React from "react";
+import Marquee from "react-fast-marquee";
 
 const TelegramLogo = () => (
   <img
@@ -8,9 +9,8 @@ const TelegramLogo = () => (
     viewBox="0 0 48 52"
     fill="none"
     src="/images/HomePage/Telegram_2019_Logo.svg.png"
-    alt='Logo'
-  >
-  </img>
+    alt="Logo"
+  ></img>
 );
 
 const GoogleLogo = () => (
@@ -20,9 +20,8 @@ const GoogleLogo = () => (
     viewBox="0 0 24 24"
     fill="none"
     src="/images/HomePage/Google__G__logo.svg.webp"
-    alt='logo'
-  >
-  </img>
+    alt="logo"
+  ></img>
 );
 
 const WhatsAppLogo = () => (
@@ -32,9 +31,8 @@ const WhatsAppLogo = () => (
     viewBox="0 0 48 52"
     fill="none"
     src="/images/HomePage/f71ffb7ad7db43ccc7b1466de418f254.jpg"
-    alt='Logo'
-  >
-  </img>
+    alt="Logo"
+  ></img>
 );
 
 const NetFlixLogo = () => (
@@ -44,9 +42,8 @@ const NetFlixLogo = () => (
     viewBox="0 0 48 52"
     fill="none"
     src="/images/HomePage/netflix-mobile-application-logo-free-png.webp"
-    alt='Logo'
-  >
-  </img>
+    alt="Logo"
+  ></img>
 );
 
 const AmazonLogo = () => (
@@ -56,9 +53,8 @@ const AmazonLogo = () => (
     viewBox="0 0 48 52"
     fill="none"
     src="/images/HomePage/Amazon_icon.png"
-    alt='Logo'
-  >
-  </img>
+    alt="Logo"
+  ></img>
 );
 
 const FlipkartLogo = () => (
@@ -68,10 +64,9 @@ const FlipkartLogo = () => (
     viewBox="0 0 48 52"
     fill="none"
     src="/images/HomePage/png-transparent-flipkart-logo.png"
-    alt='Logo'
-    background='none'
-  >
-  </img>
+    alt="Logo"
+    background="none"
+  ></img>
 );
 
 const Brands = () => {
@@ -84,52 +79,47 @@ const Brands = () => {
     { name: "Flipkart", Component: FlipkartLogo },
   ];
 
-  const logoCount = logos.length;
-
   return (
     <>
-      <style global jsx>{`
-        @keyframes slide {
-          from {
+      {/* <style global jsx>{`
+        @keyframes scroll {
+          0% {
             transform: translateX(0);
           }
-          to {
-            transform: translateX(-50%); 
+          100% {
+            transform: translateX(-50%);
           }
         }
-        
-        .animate-slide-loop {
-          animation: slide 30s linear infinite; 
+
+        .scrolling-track {
+          display: flex;
+          width: 200%;
+          animation: scroll 30s linear infinite;
         }
-        
-        .group:hover .animate-slide-loop {
+
+        .group:hover .scrolling-track {
           animation-play-state: paused;
         }
-      `}</style>
+      `}</style> */}
 
-      <div className="overflow-hidden w-full mx-auto py-4 group bg-[#2563eb]">
-        
-        <div 
-          className="flex animate-slide-loop"
-          style={{ 
-            width: "200%"
-          }} 
-          aria-label="Scrolling brands logos"
-        >
-          {[...logos, ...logos].map((logo, index) => (
-            <div 
-              key={index} 
-              className="flex items-center justify-center px-6 md:px-8 flex-shrink-0"
-              style={{ minWidth: `${100 / logoCount}%` }} 
-            >
-              <logo.Component />
-              <span className="hidden sm:inline text-xl font-semibold ml-2 text-gray-800">
-                {logo.name}
-              </span>
-            </div>
-          ))}
-        </div>
-      </div>
+      {/* <div className="overflow-hidden w-full mx-auto py-4 group bg-[#2563eb]">
+        <div className="scrolling-track"> */}
+      {/* Duplicate the logo set to create an infinite seamless loop */}
+      <Marquee className="bg-theme py-5">
+        {[...logos, ...logos].map((logo, index) => (
+          <div
+            key={index}
+            className="flex items-center justify-center px-6 md:px-8 flex-shrink-0"
+          >
+            <logo.Component />
+            <span className="hidden sm:inline text-xl font-semibold ml-2 text-neutral-200">
+              {logo.name}
+            </span>
+          </div>
+        ))}
+      </Marquee>
+      {/* </div>
+      </div> */}
     </>
   );
 };
