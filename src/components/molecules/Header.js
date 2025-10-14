@@ -32,17 +32,17 @@ export default function Header() {
               }`}
               onClick={() => setActiveNav("/clario.ai")}
             >
-              Whats Clario.AI?
+              Whats Clario?
             </Link>
 
             <Link
-              href="resources"
+              href="who-is-it-for"
               className={`relative flex items-center gap-1 hover:text-blue-500 ${
-                activeNav === "/resources" ? "text-blue-500" : ""
+                activeNav === "/who-is-it-for" ? "text-blue-500" : ""
               }`}
-              onClick={() => setActiveNav("/resources")}
+              onClick={() => setActiveNav("/who-is-it-for")}
             >
-              Resources
+              Who is It for?
             </Link>
 
             <Link
@@ -62,7 +62,7 @@ export default function Header() {
               }`}
               onClick={() => setActiveNav("/stortelling")}
             >
-              Story Telling
+              Storytelling/case use
             </Link>
 
             <Link
@@ -160,16 +160,16 @@ export default function Header() {
             </Link>
 
             <Link
-              href="resources"
+              href="who-is-it-for"
               className={`w-full text-center py-2 hover:bg-gray-100 rounded-lg ${
-                activeNav === "/resources" ? "text-blue-500" : ""
+                activeNav === "/who-is-it-for" ? "text-blue-500" : ""
               }`}
               onClick={() => {
-                setActiveNav("/resources");
+                setActiveNav("/who-is-it-for");
                 setIsMenuOpen(false);
               }}
             >
-              Resources
+              who-is-it-for
             </Link>
 
             <Link

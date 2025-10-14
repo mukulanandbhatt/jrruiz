@@ -5,9 +5,9 @@ const BlogArticle = () => {
   return (
     <>
       {/* <div id="blogs" className=""></div> */}
-      <div className="h-[70dvh] bg-blue-500 text-white rounded-xl mx-3 my-3">
+      <div className="h-[50dvh] md:h-[70dvh] bg-blue-500 text-white sm:rounded-2xl md:rounded-3xl sm:mx-3 sm:my-3">
         <div className="relative h-full flex flex-col items-center text-center px-4 py-16 md:py-24 lg:py-32 overflow-hidden">
-          <div className="absolute top-80 right-50 hidden md:block z-20">
+          <div className="absolute top-80 right-50 hidden md:block  z-20">
             <Image
               src="/images/HomePage/Computer Vision.png"
               alt="computer vision decoration"
@@ -24,7 +24,7 @@ const BlogArticle = () => {
               height={260}
             />
           </div>
-          <div className="absolute top-60 right-5 hidden md:block">
+          <div className="absolute top-60 right-5 ">
             <Image
               src="/images/HomePage/Star.png"
               alt="star decoration"
@@ -33,7 +33,7 @@ const BlogArticle = () => {
             />
           </div>
 
-          <div className="absolute bottom-0 left-40 hidden md:block">
+          <div className="absolute bottom-0 left-40 ">
             <Image
               src="/images/ResourcesPage/Frame 2121453665.svg"
               alt="wave decoration"
