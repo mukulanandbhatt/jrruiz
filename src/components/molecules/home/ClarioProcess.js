@@ -41,7 +41,7 @@ const ClarioProcess = () => {
   return (
     <>
       <div id="storytelling" className="scroll-mt-20"></div>
-      <section className="bg-gradient-to-b from-blue-50 to-blue-200 py-20 relative overflow-hidden">
+      <section className="mt-5 bg-gradient-to-b from-blue-50 to-blue-200 py-20 relative overflow-hidden">
         <div
           className="absolute top-0 left-0 w-48 h-48 sm:w-64 sm:h-64 lg:w-96 lg:h-96 bg-no-repeat bg-contain z-0"
           style={{

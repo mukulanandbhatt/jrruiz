@@ -147,7 +147,7 @@ const Testimonials = () => {
 
   return (
     <>
-      <section className=" bg-slate-50 relative overflow-hidden mx-5 rounded-3xl">
+      <section className=" bg-slate-50 rounded-3xl relative mt-5 overflow-hidden mx-5 ">
         <div className="z-0 h-full border-2 absolute right-0  w-1/2 bg-gradient-to-b from-10% mask-l-from-20% from-blue-300 to-purple-400 mask-t-from-70% mask-b-from-50%" />
         {/* <div
           className="absolute z-0 w-[500px] h-[250px] top-[300px] right-[200px]  bg-cover bg-center"
