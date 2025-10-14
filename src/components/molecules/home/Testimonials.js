@@ -186,18 +186,18 @@ const Testimonials = () => {
             {/* <div className="absolute top-0 right-0 w-80 h-full pointer-events-none bg-gradient-to-r from-transparent to-gray-50" /> */}
           </div>
 
-          <div className="flex justify-end mt-8 space-x-2 z-30 ">
+          <div className="flex justify-end mt-8 space-x-2 ">
             <button
               onClick={handlePrev}
               disabled={currentIndex === 0}
-              className="cursor-pointer"
+              className="cursor-pointer z-20"
             >
               <LeftArrow />
             </button>
             <button
               onClick={handleNext}
               disabled={currentIndex >= testimonials.length - 4}
-              className="cursor-pointer"
+              className="cursor-pointer z-20"
             >
               <RightArrow />
             </button>
