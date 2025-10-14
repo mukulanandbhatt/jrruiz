@@ -20,7 +20,6 @@ import FAQ from "../../atoms/FAQ";
 import { Cover } from "../Button/Cover";
 
 export default function HomePage() {
- 
   return (
     <>
       <main className="bg-[#0B002E] min-h-screen text-white">
@@ -36,7 +35,7 @@ export default function HomePage() {
               backgroundBlendMode: "lighten",
             }}
           >
-            <div className="mb-6 mt-10">
+            <div className="mb-6 mt-20">
               <div className="bg-[#1E1E2F] rounded-full px-4 py-2 flex items-center justify-between shadow-md gap-4 w-fit">
                 <div className="w-10 h-10 flex items-center justify-center">
                   <img
