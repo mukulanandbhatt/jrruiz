@@ -1,7 +1,9 @@
 @import "tailwindcss";
 
-* {
-  @apply border-neutral-200;
+@layer base {
+  * {
+    @apply border-neutral-200;
+  }
 }
 
 @theme {
