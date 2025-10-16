@@ -1,12 +1,18 @@
 import Heading from "@/components/atoms/Heading";
 import Para from "@/components/atoms/Para";
 import Separator from "@/components/atoms/Separator";
+import { cn } from "@/components/molecules/Button/CN";
 
 export default function page() {
   return (
     <div className="flex flex-col h-full w-full sm:p-5">
       {/* HEADER SECTION */}
-      <section className="w-full  rounded-2xl bg-theme  h-[50vh] flex flex-col justify-center items-center text-white">
+      <section
+        className={cn(
+          "w-full  rounded-2xl bg-theme h-[50vh] flex flex-col justify-center items-center text-white",
+          "bg-[radial-gradient(rgba(255,255,255,0.171)_2px,transparent_0)] bg-[size:20px_20px]"
+        )}
+      >
         <h6 className="sm:text-5xl text-4xl font-medium">
           Careers at Clario AI
         </h6>
@@ -46,54 +52,56 @@ export default function page() {
         {/* LIFE AT CLARIO SECTION */}
         <section>
           <Heading>Life at Clario AI</Heading>
-          <Para className="mt-3">
-            👩‍💻 “Every day brings new challenges, and I’m constantly learning.
-            Working here is never boring.” <br /> — Product Team
-          </Para>
-          <Para>
-            📞 “I understand users’ struggles because I’ve lived them. Together,
-            we build solutions that really matter.”
-            <br /> — Customer Success
-          </Para>
-          <Para>
-            👨‍💻 “Our ‘Nice People Only’ philosophy makes teamwork inspiring and
-            fun. We celebrate wins together.”
-            <br /> — Engineering
-          </Para>
-          <Para>
-            🎉 “We work hard, but we also know how to enjoy success — whether at
-            team events or spontaneous after-work moments.”
-            <br /> — Sales
-          </Para>
+          <div className="space-y-2">
+            <Para>
+              👩‍💻 “Every day brings new challenges, and I’m constantly learning.
+              Working here is never boring.” <br /> — Product Team
+            </Para>
+            <Para>
+              📞 “I understand users’ struggles because I’ve lived them.
+              Together, we build solutions that really matter.”
+              <br /> — Customer Success
+            </Para>
+            <Para>
+              👨‍💻 “Our ‘Nice People Only’ philosophy makes teamwork inspiring and
+              fun. We celebrate wins together.”
+              <br /> — Engineering
+            </Para>
+            <Para>
+              🎉 “We work hard, but we also know how to enjoy success — whether
+              at team events or spontaneous after-work moments.”
+              <br /> — Sales
+            </Para>
+          </div>
         </section>
         <Separator />
 
         {/* OUR VALUES SECTION*/}
         <section>
           <Heading>Our Values</Heading>
-          <Para className="mt-3">
-            We design every feature to serve our users.
-          </Para>
-          <Para>
-            ⚡ Start Small — Learn Fast <br />
-            Experiment, learn, and grow quickly.
-          </Para>
-          <Para>
-            🤝Team Over Ego <br />
-            We celebrate wins together and support each other.
-          </Para>
-          <Para>
-            😊Nice People Only
-            <br /> We value respect, openness, and kindness.
-          </Para>
-          <Para>
-            🚀 Less is More
-            <br /> We keep solutions simple and impactful.
-          </Para>
-          <Para>
-            🔥 Be Proactive <br />
-            If you see something to improve, take the lead.s
-          </Para>
+          <div className="space-y-2">
+            <Para>We design every feature to serve our users.</Para>
+            <Para>
+              ⚡ Start Small — Learn Fast <br />
+              Experiment, learn, and grow quickly.
+            </Para>
+            <Para>
+              🤝Team Over Ego <br />
+              We celebrate wins together and support each other.
+            </Para>
+            <Para>
+              😊Nice People Only
+              <br /> We value respect, openness, and kindness.
+            </Para>
+            <Para>
+              🚀 Less is More
+              <br /> We keep solutions simple and impactful.
+            </Para>
+            <Para>
+              🔥 Be Proactive <br />
+              If you see something to improve, take the lead.s
+            </Para>
+          </div>
         </section>
         <Separator />
         {/* BENEFITS */}

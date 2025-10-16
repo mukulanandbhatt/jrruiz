@@ -1,12 +1,18 @@
 import Heading from "@/components/atoms/Heading";
 import Para from "@/components/atoms/Para";
 import Separator from "@/components/atoms/Separator";
+import { cn } from "@/components/molecules/Button/CN";
 
 export default function AboutUsPage() {
   return (
     <div className="flex flex-col  h-full w-full sm:p-5 p-3">
       {/* HEADER */}
-      <section className="w-full rounded-xl sm:rounded-2xl bg-theme  h-[45vh] flex flex-col justify-center items-center text-white">
+      <section
+        className={cn(
+          "w-full rounded-xl sm:rounded-2xl bg-theme  h-[50vh] flex flex-col justify-center items-center text-white",
+          "bg-[radial-gradient(rgba(255,255,255,0.171)_2px,transparent_0)] bg-[size:20px_20px]"
+        )}
+      >
         <h6 className="sm:text-5xl text-4xl font-medium">About CLARIO.AI</h6>
         <p className="mt-5">Home/ About us</p>
       </section>
