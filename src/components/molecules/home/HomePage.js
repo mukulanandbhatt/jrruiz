@@ -176,7 +176,7 @@ export default function HomePage() {
               height={92}
             />
           </div>
-          <div className="absolute top-30 right-60 hidden md:block">
+          <div className="absolute top-30 right-60 hidden min-[1350px]:block">
             <Image
               src="/images/HomePage/Property 1=Group.png"
               alt="decoration"
@@ -184,7 +184,7 @@ export default function HomePage() {
               height={110}
             />
           </div>
-          <div className="absolute top-80 right-40 hidden md:block bg-transparent">
+          <div className="absolute top-80 right-40 hidden bg-transparent min-[1350px]:block">
             <Image
               src="/images/HomePage/Gemini_Generated_Image_p21zalp21zalp21z-removebg-preview.png"
               alt="contracts decoration"
@@ -193,7 +193,7 @@ export default function HomePage() {
               className="bg-none"
             />
           </div>
-          <div className="absolute bottom-80 right-80 hidden md:block">
+          <div className="absolute bottom-80 right-80 hidden min-[1350px]:block">
             <Image
               src="/images/HomePage/Vector.png"
               alt="vector decoration"
@@ -217,7 +217,7 @@ export default function HomePage() {
               height={400}
             />
           </div>
-          <div className="absolute top-45 left-75 hidden md:block">
+          <div className="absolute top-52 left-75 hidden min-[1350px]:block">
             <Image
               src="/images/HomePage/Property 2=Group.png"
               alt="Message decoration"
@@ -225,7 +225,7 @@ export default function HomePage() {
               height={60}
             />
           </div>
-          <div className="absolute top-20 left-90 hidden md:block">
+          <div className="absolute top-36 left-90 hidden min-[1350px]:block">
             <Image
               src="/images/HomePage/Emails.svg"
               alt=" Email decoration"
@@ -233,7 +233,7 @@ export default function HomePage() {
               height={150}
             />
           </div>
-          <div className="absolute top-100 left-40 hidden md:block">
+          <div className="absolute top-100 left-40 hidden min-[1350px]:block">
             <Image
               src="/images/HomePage/Group 1597883996.svg"
               alt="invoices decoration"
@@ -241,7 +241,7 @@ export default function HomePage() {
               height={200}
             />
           </div>
-          <div className="absolute bottom-70 left-85 hidden md:block">
+          <div className="absolute bottom-70 left-85 hidden min-[1350px]:block">
             <Image
               src="/images/HomePage/Property 3=Group.png"
               alt="decoration"

@@ -90,14 +90,15 @@ export default function Header() {
                 <div className="bg-slate-50 px-5 py-3 mt-3 rounded-md  shadow-md  w-36 flex flex-col gap-2">
                   <Link
                     className="hover:text-blue-500 flex gap-2 items-center"
-                    href="#"
+                    href="
+                    /about-us"
                   >
                     <FcAbout size={16} />
                     About us
                   </Link>
                   <Link
                     className="hover:text-blue-500 flex gap-2 items-center"
-                    href="#"
+                    href="/jobs"
                   >
                     <Briefcase size={16} />
                     Jobs

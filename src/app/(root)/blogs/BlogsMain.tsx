@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { articles } from "./constants/constants";
+import { blogsData } from "./constants/constants";
 import Container from "@/components/atoms/Container";
 import Blog from "@/components/atoms/Blog";
 
@@ -11,19 +11,19 @@ const BlogsMain = () => {
     setShowMore(true);
   };
 
-  const displayedArticles = articles.slice(0, 9);
+  const displayedArticles = blogsData.slice(0, 9);
 
-  const additionalArticles = articles.slice(9);
+  // const additionalArticles = blogsData.slice(9);
 
   return (
     <Container className=" p-4 sm:p-8 md:p-12 lg:p-16 rounded-xl">
       <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-3  sm:gap-5">
-        {displayedArticles.map((article, index) => (
-          <Blog blogData={article} key={index} />
+        {blogsData.map((blog, index) => (
+          <Blog blogData={blog} key={index} />
         ))}
-        {showMore &&
-          additionalArticles.map((article, index) => (
-            <Blog blogData={article} key={index} />
+        {/* {showMore &&
+          additionalArticles.map((blog, index) => (
+            <Blog blogData={blog} key={index} />
           ))}
 
         {!showMore && (
@@ -35,7 +35,7 @@ const BlogsMain = () => {
               Load More
             </button>
           </div>
-        )}
+        )} */}
       </div>
     </Container>
   );
