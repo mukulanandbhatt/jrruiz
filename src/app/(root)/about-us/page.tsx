@@ -1,20 +1,21 @@
-import { cn } from "@/components/molecules/Button/CN";
-import { ReactNode } from "react";
+import Heading from "@/components/atoms/Heading";
+import Para from "@/components/atoms/Para";
+import Separator from "@/components/atoms/Separator";
 
 export default function AboutUsPage() {
   return (
-    <div className="flex flex-col  h-full w-full p-5">
+    <div className="flex flex-col  h-full w-full sm:p-5 p-3">
       {/* HEADER */}
-      <section className="w-full  rounded-2xl bg-theme  h-[45vh] flex flex-col justify-center items-center text-white">
+      <section className="w-full rounded-xl sm:rounded-2xl bg-theme  h-[45vh] flex flex-col justify-center items-center text-white">
         <h6 className="sm:text-5xl text-4xl font-medium">About CLARIO.AI</h6>
         <p className="mt-5">Home/ About us</p>
       </section>
 
       {/* OUR MISSION SECTION */}
-      <div className="pt-10 pb-20 max-w-[1000px] mx-auto ">
+      <div className="pt-10 pb-20 max-w-[1000px] mx-auto px-2">
         <section>
-          <h6 className="text-2xl font-medium sm:text-3xl">Our Mission</h6>
-          <Para className="mt-4">
+          <Heading>Our Mission</Heading>
+          <Para className="">
             We founded Clario AI because we believe that everyone—individuals,
             families, freelancers, and businesses—deserves clarity, security,
             and control over their documents.
@@ -39,11 +40,11 @@ export default function AboutUsPage() {
             their freedom—while reducing the stress and cost of bureaucracy.
           </Para>
         </section>
-        <hr className="w-full mt-8 mb-5" />
+        <Separator />
         {/* OUR MISSION SECTION */}
         <section>
           <Heading>Our Founders</Heading>
-          <Para className="mt-4">
+          <Para className="">
             Clario AI is led by two brothers who share the vision of
             transforming how people handle paperwork:
           </Para>
@@ -67,18 +68,18 @@ export default function AboutUsPage() {
             </p>
           </div>
         </section>
-        <hr className="w-full mt-8 mb-5" />
+        <Separator />
         <Heading>Our Team</Heading>
-        <Para className="mt-3 text-base font-medium">
+        <Para className="">
           Our talented, international team brings expertise from software,
           fintech, AI, and legal-tech industries.
         </Para>
-        <Para className="mt-3 text-base font-medium">
+        <Para className="mt-3 ">
           Together, we are dedicated to creating innovative solutions that solve
           real-world problems: from missed deadlines and misunderstood contracts
           to international bureaucracy and everyday family paperwork.
         </Para>
-        <Para className="mt-3 text-base font-medium">
+        <Para className="mt-3 ">
           We work in close collaboration with users—freelancers, families, SMEs,
           and expats—because the best solutions are built when they answer real
           needs.
@@ -89,35 +90,16 @@ export default function AboutUsPage() {
   );
 }
 
-function Para({
-  children,
-  className,
-}: {
-  children: ReactNode;
-  className?: string;
-}) {
-  return (
-    <p
-      className={cn(
-        "text-sm text-text-primary sm:leading-5.5 tracking-wide",
-        className
-      )}
-    >
-      {children}
-    </p>
-  );
-}
-
-function Heading({
-  children,
-  className,
-}: {
-  children: ReactNode;
-  className?: string;
-}) {
-  return (
-    <h6 className={cn("text-2xl font-medium sm:text-3xl", className)}>
-      {children}
-    </h6>
-  );
-}
+// function Heading({
+//   children,
+//   className,
+// }: {
+//   children: ReactNode;
+//   className?: string;
+// }) {
+//   return (
+//     <h6 className={cn("text-2xl font-medium sm:text-3xl", className)}>
+//       {children}
+//     </h6>
+//   );
+// }
