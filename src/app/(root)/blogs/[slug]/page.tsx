@@ -11,7 +11,6 @@ export default async function BlogDetailPage({
 }) {
   const { slug } = await params;
   const currBlog = blogsData.find((blog) => generateSlug(blog.title) === slug);
-  console.log({ blogsData, slug, currBlog });
   return (
     <div className="flex flex-col">
       {/* header SECTION*/}

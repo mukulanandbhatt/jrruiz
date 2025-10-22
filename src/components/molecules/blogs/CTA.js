@@ -22,10 +22,13 @@ const CTA = () => {
       </div>
       <div className="z-10 text-white text-center p-4 sm:p-6 space-y-4 sm:space-y-6 max-w-4xl sm:max-w-7xl mx-auto">
         <h2 className="text-xl sm:text-2xl md:text-4xl font-semibold leading-tight">
-          Rethinking calls with Clario.ai
+          Rethink Bureaucracy with Clario.ai
         </h2>
         <p className="text-base sm:text-lg lg:text-2xl font-light max-w-4xl sm:max-w-7xl mx-auto">
-          Try Clario.ai for yourself and experience how our AI phone assistant automates your calls and <br/> relieves your team – simply, efficiently, and around the clock.
+          Your personal AI assistant for every document — contracts, invoices,
+          insurances, and beyond. Clario reads, explains, and organizes your
+          paperwork, so you can focus on what really matters — life, not
+          bureaucracy.
         </p>
 
         <div className="flex flex-col sm:flex-row justify-center items-center gap-3 sm:gap-4 pt-2 sm:pt-4">
@@ -47,7 +50,7 @@ const CTA = () => {
             </svg>
           </button>
           <button className="flex items-center gap-1 sm:gap-2 px-6 sm:px-8 py-2 sm:py-4 bg-transparent border-2 border-white text-white rounded-full transition-all duration-300 hover:scale-105 hover:bg-white hover:text-black text-sm sm:text-base cursor-pointer">
-            DEMO FOR FREE
+            Take DEMO FOR FREE
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
