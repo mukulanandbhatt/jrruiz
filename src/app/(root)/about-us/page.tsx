@@ -5,11 +5,11 @@ import { cn } from "@/components/molecules/Button/CN";
 
 export default function AboutUsPage() {
   return (
-    <div className="flex flex-col  h-full w-full sm:p-5 p-3">
+    <div className="flex flex-col  h-full w-full sm:p-5 ">
       {/* HEADER */}
       <section
         className={cn(
-          "w-full rounded-xl sm:rounded-2xl bg-theme  h-[50vh] flex flex-col justify-center items-center text-white",
+          "w-full sm:rounded-2xl bg-theme  md:h-[60vh] h-[50vh] flex flex-col justify-center pt-20  items-center text-white",
           "bg-[radial-gradient(rgba(255,255,255,0.171)_2px,transparent_0)] bg-[size:20px_20px]"
         )}
       >
@@ -18,7 +18,7 @@ export default function AboutUsPage() {
       </section>
 
       {/* OUR MISSION SECTION */}
-      <div className="pt-10 pb-20 max-w-[1000px] mx-auto px-2">
+      <div className="pt-10 pb-20 max-w-[1000px] mx-auto px-5">
         <section>
           <Heading>Our Mission</Heading>
           <Para className="">

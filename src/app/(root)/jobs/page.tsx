@@ -9,17 +9,17 @@ export default function page() {
       {/* HEADER SECTION */}
       <section
         className={cn(
-          "w-full  rounded-2xl bg-theme h-[50vh] flex flex-col justify-center items-center text-white",
+          "w-full  sm:rounded-2xl bg-theme h-[60vh] px-3 flex flex-col justify-center items-center pt-20 text-white",
           "bg-[radial-gradient(rgba(255,255,255,0.171)_2px,transparent_0)] bg-[size:20px_20px]"
         )}
       >
-        <h6 className="sm:text-5xl text-4xl font-medium">
+        <h6 className="sm:text-5xl text-4xl font-medium text-center">
           Careers at Clario AI
         </h6>
         {/* <h6 className="sm:text-5xl text-4xl font-medium mt-3">
           Build The Future Together
         </h6> */}
-        <p className="text-center max-w-xl mt-4">
+        <p className="text-center max-w-xl mt-4 max-sm:text-sm">
           We’re not just simplifying documents — we’re building the future of
           trust in everyday life.
         </p>
@@ -27,7 +27,7 @@ export default function page() {
       </section>
 
       {/*  */}
-      <div className="pt-10 pb-20 max-w-[1000px] mx-auto px-2">
+      <div className="pt-10 pb-20 max-w-[1000px] mx-auto px-5">
         {/* WHO WE ARE SECTION */}
         <section>
           <Heading>Who We Are</Heading>

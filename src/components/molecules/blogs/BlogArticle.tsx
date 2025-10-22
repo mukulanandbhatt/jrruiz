@@ -5,7 +5,7 @@ const BlogArticle = () => {
   return (
     <>
       {/* <div id="blogs" className=""></div> */}
-      <div className="h-[50dvh] md:h-[70dvh] bg-blue-500 text-white sm:rounded-2xl md:rounded-3xl sm:mx-3 sm:my-3">
+      <div className="h-[60dvh] md:h-[70dvh] bg-blue-500 text-white sm:rounded-2xl md:rounded-3xl sm:mx-3 sm:my-3">
         <div className="relative h-full flex flex-col items-center text-center px-4 py-16 md:py-24 lg:py-32 overflow-hidden">
           <div className="absolute top-80 right-50 hidden md:block  z-20">
             <Image
@@ -49,10 +49,10 @@ const BlogArticle = () => {
           />
 
           <div className="z-20 mt-20">
-            <h6 className="text-2xl md:text-5xl sm:text-3xl lg:text-6xl font-bold max-w-4xl leading-tight">
+            <h6 className="text-4xl md:text-5xl sm:text-3xl lg:text-6xl font-bold max-w-4xl leading-tight">
               Blog article
             </h6>
-            <p className="mt-6 max-w-2xl text-lg md:text-xl text-center text-white mx-auto">
+            <p className="mt-4 sm:mt-6 max-w-2xl text-lg md:text-xl text-center text-white mx-auto ">
               In our blog section you will find inspiration, insights and
               current <br /> topics related to telephone AI & communication.
             </p>

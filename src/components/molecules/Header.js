@@ -55,8 +55,8 @@ export default function Header() {
   ];
   return (
     <>
-      <header className="fixed  top-8 left-1/2 -translate-x-1/2  z-50 w-full max-w-[1296px] px-5">
-        <div className="flex items-center justify-between bg-white backdrop-blur-md border border-gray-200 shadow-md px-4 py-4 rounded-full">
+      <header className="fixed w-full sm:w-[calc(100%-2rem)] top-8 self-center z-50 max-w-[1200px] px-5 ">
+        <div className="flex items-center justify-between bg-white backdrop-blur-md border border-gray-200 shadow-md px-3 sm:px-4 py-3 sm:py-4 rounded-full">
           <Link href="/">
             <Image
               src="/images/Frame 5.png"
@@ -64,6 +64,7 @@ export default function Header() {
               width={100}
               height={100}
               priority
+              className="max-sm:h-9"
             />
           </Link>
 
@@ -248,83 +249,28 @@ export default function Header() {
                 {navlink?.title}
               </Link>
             ))}
-            {/* <Link
-              href="#"
-              className={`w-full text-center py-2 hover:bg-gray-100 rounded-lg ${
-                activeNav === "/clario.ai" ? "text-blue-500" : ""
-              }`}
-              onClick={() => {
-                setActiveNav("/clario.ai");
-                setIsMenuOpen(false);
-              }}
-            >
-              What Clario.AI?
-            </Link>
-
             <Link
-              href="who-is-it-for"
-              className={`w-full text-center py-2 hover:bg-gray-100 rounded-lg ${
-                activeNav === "/who-is-it-for" ? "text-blue-500" : ""
-              }`}
-              onClick={() => {
-                setActiveNav("/who-is-it-for");
-                setIsMenuOpen(false);
-              }}
+              onClick={() => setIsMenuOpen(false)}
+              className="hover:text-blue-500 flex gap-2 items-center"
+              href="
+                    /about-us"
             >
-              who-is-it-for
+              About us
             </Link>
-
             <Link
-              href="blogs"
-              className={`w-full text-center py-2 hover:bg-gray-100 rounded-lg ${
-                activeNav === "/blogs" ? "text-blue-500" : ""
-              }`}
-              onClick={() => {
-                setActiveNav("/blogs");
-                setIsMenuOpen(false);
-              }}
+              onClick={() => setIsMenuOpen(false)}
+              className="hover:text-blue-500 flex gap-2 items-center"
+              href="/jobs"
+            >
+              Jobs
+            </Link>
+            <Link
+              onClick={() => setIsMenuOpen(false)}
+              className="hover:text-blue-500 flex gap-2 items-center"
+              href="/blogs"
             >
               Blogs
             </Link>
-
-            <Link
-              href="#use-case"
-              className={`w-full text-center py-2 hover:bg-gray-100 rounded-lg ${
-                activeNav === "/use-case" ? "text-blue-500" : ""
-              }`}
-              onClick={() => {
-                setActiveNav("/use-case");
-                setIsMenuOpen(false);
-              }}
-            >
-              Story telling
-            </Link>
-
-            <Link
-              href="#pricing"
-              className={`w-full text-center py-2 hover:bg-gray-100 rounded-lg ${
-                activeNav === "/pricing" ? "text-blue-500" : ""
-              }`}
-              onClick={() => {
-                setActiveNav("/pricing");
-                setIsMenuOpen(false);
-              }}
-            >
-              Pricing
-            </Link>
-
-            <Link
-              href="#faq"
-              className={`w-full text-center py-2 hover:bg-gray-100 rounded-lg ${
-                activeNav === "/faq" ? "text-blue-500" : ""
-              }`}
-              onClick={() => {
-                setActiveNav("/faq");
-                setIsMenuOpen(false);
-              }}
-            >
-              FAQ
-            </Link> */}
 
             <div className="flex flex-col space-y-2 w-full mt-4">
               <Link
