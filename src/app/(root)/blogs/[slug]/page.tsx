@@ -11,7 +11,6 @@ export default async function BlogDetailPage({
 }) {
   const { slug } = await params;
   const currBlog = blogsData.find((blog) => generateSlug(blog.title) === slug);
-  console.log({ blogsData, slug, currBlog });
   return (
     <div className="flex flex-col">
       {/* header SECTION*/}
@@ -25,10 +24,10 @@ export default async function BlogDetailPage({
               <h1 className="sm:text-5xl text-4xl font-semibold max-w-md mt-2 text-neutral-100">
                 {currBlog?.title}
               </h1>
-              <h2 className="sm:text-xl text-lg font-medium text-neutral-200 mt-10">
+              {/* <h2 className="sm:text-xl text-lg font-medium text-neutral-200 mt-10">
                 Important information: New bank regulations for IBAN
                 reconciliation from 9 October 2025
-              </h2>
+              </h2> */}
               <div className="gap-4 flex text-neutral-200 font-medium mt-8">
                 <p>{currBlog?.date}</p>
                 <p>{currBlog?.readTime}</p>
@@ -36,11 +35,11 @@ export default async function BlogDetailPage({
             </div>
             <div className="flex-1">
               <Image
-                alt="blog images"
-                src={"/images/blogs/unsplash_Nv-vx3kUR2A-1.jpg"}
+                alt={currBlog?.title || "blog-image"}
+                src={currBlog?.image || ""}
                 height={500}
                 width={500}
-                className="rounded-xl"
+                className="rounded-xl  shadow-md"
               />
             </div>
           </div>

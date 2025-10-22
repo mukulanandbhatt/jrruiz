@@ -10,7 +10,7 @@ const FeatureCard = ({ icon, title, description, delay }) => (
     whileInView={{ opacity: 1, y: 0, scale: 1 }}
     transition={{ duration: 0.6, delay }}
     viewport={{ once: true, amount: 0.3 }}
-    className="bg-white rounded-xl shadow-lg p-6 flex-shrink-0 w-72 sm:w-80 md:w-96 flex flex-col items-center text-center border border-gray-100"
+    className=" bg-white rounded-xl shadow-lg p-6 flex-shrink-0 w-72 sm:w-80 md:w-96 flex flex-col items-center text-center border border-gray-100"
   >
     <div className="mb-6 p-4 rounded-full bg-white shadow-md">{icon}</div>
     <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-gray-900 mb-4">
@@ -45,8 +45,8 @@ const WhyUs = () => {
   };
 
   return (
-    <section className="py-12 sm:py-16 bg-gradient-to-r from-blue-50 to-indigo-50 relative">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
+    <section className="py-12 sm:py-16 bg-gradient-to-r from-blue-50 to-indigo-50 relative ">
+      <div className="container mx-auto px-4 relative ">
         <div className="text-center mb-10 relative z-10">
           <h2 className="text-2xl sm:text-2xl md:text-4xl font-bold text-gray-800">
             Why Clario.AI?
@@ -56,7 +56,7 @@ const WhyUs = () => {
             document management
           </p>
         </div>
-        <div className="relative">
+        <div className="relative mx-auto max-w-[90%] ">
           <button
             onClick={() => scrollByAmount(-550)}
             className="hidden sm:flex absolute -left-10 top-1/2 -translate-y-1/2 bg-white shadow-md p-2 rounded-full z-20 hover:bg-gray-100"
@@ -73,7 +73,7 @@ const WhyUs = () => {
           <div
             ref={scrollRef}
             onWheel={handleWheel}
-            className="flex max-sm:px-5 flex-row overflow-x-auto gap-6 sm:gap-8 pb-4 -mx-4  [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] relative z-10 scroll-smooth"
+            className="flex max-sm:px-5 flex-row overflow-x-auto gap-6 sm:gap-5 pb-4 -mx-4  [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] relative z-10 scroll-smooth"
           >
             <FeatureCard
               delay={0.1}
