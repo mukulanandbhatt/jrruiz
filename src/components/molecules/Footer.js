@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { FaYoutube, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FOOTER_DATA } from "@/constants/constants";
 
 export default function Footer() {
   return (
@@ -23,27 +24,32 @@ export default function Footer() {
         }}
       ></div>
 
-      <div className="container mx-auto px-6 lg:px-16 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-16">
-          <div className="flex flex-col gap-6 max-w-[320px]">
-            <div className="flex items-center gap-3">
-              <Image
-                src="/images/logo.svg"
-                alt="Clario.ai"
-                width={150}
-                height={150}
-              />
-            </div>
-            <p className="text-white text-[18px] leading-[30px]">
+      <div className="3xl:max-w-[1600px] max-w-[1400px] mx-auto px-6 md:px-10 lg:px-16 relative z-10 w-full ">
+        <div className="grid grid-cols-1  lg:grid-cols-5  gap-[max(6vw,1rem)] justify-items-center ">
+          <div className="flex flex-col items-center gap-4 ">
+            <Image
+              src="/images/logo.svg"
+              alt="Clario.ai"
+              width={150}
+              height={150}
+            />
+            <p className="text-white text-lg leading-[30px] text-center">
               Clario.ai automates the most time-consuming legal tasks.
             </p>
           </div>
-
-          <div>
-            <h3 className="font-[PP_Mori] font-semibold text-[18px] leading-[30px] text-blue-500 mb-4">
+          {/* Quick Links */}
+          <section>
+            <h3 className="text-center font-[PP_Mori] font-semibold text-[18px] leading-[30px] text-blue-500 mb-3 sm:mb-4">
               Quick Links
             </h3>
-            <ul className="space-y-3 text-gray-300 text-[18px] leading-[30px] font-[PP_Mori]">
+            {FOOTER_DATA.quickLinks.map((data) => (
+              <UnorderedList key={data.label}>
+                <li className="text-nowrap text-center">
+                  <Link href={data.href}>{data.label}</Link>
+                </li>
+              </UnorderedList>
+            ))}
+            {/* <ul className="space-y-3 text-gray-300 text-[18px] leading-[30px] font-[PP_Mori] flex items-center flex-col">
               <li>
                 <Link href="/">Home</Link>
               </li>
@@ -62,14 +68,24 @@ export default function Footer() {
               <li>
                 <Link href="/contact">Contact Me</Link>
               </li>
-            </ul>
-          </div>
+            </ul> */}
+          </section>
+          {/*    About & Policies */}
 
-          <div>
-            <h3 className="font-[PP_Mori] font-semibold text-[18px] leading-[30px] text-blue-500 mb-4">
+          <section>
+            <h3 className="text-center font-[PP_Mori] font-semibold text-[18px] leading-[30px] text-blue-500 mb-3 sm:mb-4">
               About & Policies
             </h3>
-            <ul className="space-y-3 text-gray-300 text-[18px] leading-[30px] font-[PP_Mori]">
+            {FOOTER_DATA.aboutAndPolicies.map((data) => (
+              <UnorderedList key={data.label}>
+                <li className="text-nowrap text-center">
+                  <Link href={data.href}>{data.label}</Link>
+                </li>
+              </UnorderedList>
+            ))}
+          </section>
+
+          {/* <ul className="space-y-3 text-gray-300 text-[18px] leading-[30px] font-[PP_Mori] flex items-center flex-col">
               <li>
                 <Link href="/about">About</Link>
               </li>
@@ -85,14 +101,21 @@ export default function Footer() {
               <li>
                 <Link href="/accessibility">Accessibility</Link>
               </li>
-            </ul>
-          </div>
+            </ul> */}
+          {/*  Get Help */}
 
-          <div>
-            <h3 className="font-[PP_Mori] font-semibold text-[18px] leading-[30px] text-blue-500 mb-4">
+          <section>
+            <h3 className="text-center font-[PP_Mori] font-semibold text-[18px] leading-[30px] text-blue-500 mb-3 sm:mb-4">
               Get Help
             </h3>
-            <ul className="space-y-3 text-gray-300 text-[18px] leading-[30px] font-[PP_Mori]">
+            {FOOTER_DATA.getHelp.map((data) => (
+              <UnorderedList key={data.label}>
+                <li className="text-nowrap text-center">
+                  <Link href={data.href}>{data.label}</Link>
+                </li>
+              </UnorderedList>
+            ))}
+            {/* <ul className="space-y-3 text-gray-300 text-[18px] leading-[30px] font-[PP_Mori] flex items-center flex-col">
               <li>
                 <Link href="/therapists">Therapists</Link>
               </li>
@@ -105,25 +128,34 @@ export default function Footer() {
               <li>
                 <Link href="/support-groups">Support Groups</Link>
               </li>
-            </ul>
-          </div>
+            </ul> */}
+          </section>
+          {/*    Contact Info */}
 
-          <div>
-            <h3 className="font-[PP_Mori] font-semibold text-[18px] leading-[30px] text-blue-500 mb-4">
+          <section>
+            <h3 className="font-[PP_Mori] font-semibold text-[18px] leading-[30px] text-blue-500 mb-3 sm:mb-4 text-center">
               Contact Info
             </h3>
-            <ul className="space-y-3 text-gray-300 text-[18px] leading-[30px] font-[PP_Mori]">
+            {FOOTER_DATA.contactInfo.map((data) => (
+              <UnorderedList key={data.label}>
+                <li className="text-nowrap text-center">
+                  <Link href={data.href}>{data.label}</Link>
+                </li>
+              </UnorderedList>
+            ))}
+            {/* <ul className="space-y-3 text-gray-300 text-[18px] leading-[30px] font-[PP_Mori] flex items-center flex-col">
               <li>📍 New York, MFT 43574, USA</li>
               <li>📍 Paseo Padre Parkway, Suite H, Fremont, CA 94539</li>
-              <li>📞 (510) 612-6471</li>
-              <li>📞 123456789</li>
-            </ul>
-          </div>
+              <li className="text-nowrap">📞 (510) 612-6471</li>
+              <li className="text-nowrap">📞 123456789</li>
+            </ul> */}
+          </section>
         </div>
 
         <div className="border-t border-gray-700 my-8"></div>
 
-        <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+        {/* SOCIAL ICONS */}
+        <section className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
           <p>Copyright © 2025 by Clario.ai. All Rights Reserved</p>
           <div className="flex items-center gap-4 mt-4 md:mt-0">
             <span>Follow On :</span>
@@ -137,8 +169,16 @@ export default function Footer() {
               <FaLinkedin className="w-5 h-5 hover:text-blue-500 transition" />
             </Link>
           </div>
-        </div>
+        </section>
       </div>
     </footer>
+  );
+}
+
+function UnorderedList({ children }) {
+  return (
+    <ul className=" text-gray-300 text-[18px] leading-9 font-[PP_Mori] flex items-center flex-col">
+      {children}
+    </ul>
   );
 }
