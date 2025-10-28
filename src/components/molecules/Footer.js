@@ -43,7 +43,7 @@ export default function Footer() {
               Quick Links
             </h3>
             {FOOTER_DATA.quickLinks.map((data) => (
-              <UnorderedList>
+              <UnorderedList key={data.label}>
                 <li className="text-nowrap text-center">
                   <Link href={data.href}>{data.label}</Link>
                 </li>
@@ -77,7 +77,7 @@ export default function Footer() {
               About & Policies
             </h3>
             {FOOTER_DATA.aboutAndPolicies.map((data) => (
-              <UnorderedList>
+              <UnorderedList key={data.label}>
                 <li className="text-nowrap text-center">
                   <Link href={data.href}>{data.label}</Link>
                 </li>
@@ -109,7 +109,7 @@ export default function Footer() {
               Get Help
             </h3>
             {FOOTER_DATA.getHelp.map((data) => (
-              <UnorderedList>
+              <UnorderedList key={data.label}>
                 <li className="text-nowrap text-center">
                   <Link href={data.href}>{data.label}</Link>
                 </li>
@@ -137,7 +137,7 @@ export default function Footer() {
               Contact Info
             </h3>
             {FOOTER_DATA.contactInfo.map((data) => (
-              <UnorderedList>
+              <UnorderedList key={data.label}>
                 <li className="text-nowrap text-center">
                   <Link href={data.href}>{data.label}</Link>
                 </li>
