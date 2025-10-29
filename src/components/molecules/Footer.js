@@ -24,8 +24,8 @@ export default function Footer() {
         }}
       ></div>
 
-      <div className="3xl:max-w-[1600px] max-w-[1400px] mx-auto px-6 md:px-10 lg:px-16 relative z-10 w-full ">
-        <div className="grid grid-cols-1  lg:grid-cols-5  gap-[max(6vw,1rem)] justify-items-center ">
+      <div className="3xl:max-w-[1600px] max-w-[1200px] mx-auto px-6 md:px-10 lg:px-16 relative z-10 w-full ">
+        <div className="grid grid-cols-1  md:grid-cols-4  gap-[max(6vw,1rem)] justify-items-center ">
           <div className="flex flex-col items-center gap-4 ">
             <Image
               src="/images/logo.svg"
@@ -33,7 +33,7 @@ export default function Footer() {
               width={150}
               height={150}
             />
-            <p className="text-white text-lg leading-[30px] text-center">
+            <p className="text-white lg:text-lg leading-[30px] text-center">
               Clario.ai automates the most time-consuming legal tasks.
             </p>
           </div>
@@ -104,7 +104,7 @@ export default function Footer() {
             </ul> */}
           {/*  Get Help */}
 
-          <section>
+          {/* <section>
             <h3 className="text-center font-[PP_Mori] font-semibold text-[18px] leading-[30px] text-blue-500 mb-3 sm:mb-4">
               Get Help
             </h3>
@@ -115,21 +115,7 @@ export default function Footer() {
                 </li>
               </UnorderedList>
             ))}
-            {/* <ul className="space-y-3 text-gray-300 text-[18px] leading-[30px] font-[PP_Mori] flex items-center flex-col">
-              <li>
-                <Link href="/therapists">Therapists</Link>
-              </li>
-              <li>
-                <Link href="/psychiatrists">Psychiatrists</Link>
-              </li>
-              <li>
-                <Link href="/treatment-centers">Treatment Centers</Link>
-              </li>
-              <li>
-                <Link href="/support-groups">Support Groups</Link>
-              </li>
-            </ul> */}
-          </section>
+          </section> */}
           {/*    Contact Info */}
 
           <section>
