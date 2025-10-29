@@ -4,7 +4,7 @@ export const FOOTER_DATA = {
         { label: "Services", href: "#" },
         { label: "About Me", href: "#" },
         { label: "V-Blog", href: "/blogs" },
-        { label: "Location & Directions", href: "#" },
+        // { label: "Location & Directions", href: "#" },
         { label: "Contact Me", href: "#" },
     ],
     aboutAndPolicies: [
@@ -12,7 +12,6 @@ export const FOOTER_DATA = {
         { label: "Careers", href: "/jobs" },
         { label: "Privacy", href: "#" },
         { label: "Terms", href: "#" },
-        { label: "Accessibility", href: "#" },
     ],
     getHelp: [
         { label: "Therapists", href: "#" },
